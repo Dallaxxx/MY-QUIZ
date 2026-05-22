@@ -665,46 +665,85 @@ Right index.HTML
                 if(quizNode.quizHTML) {
                     const antiFreezeScript = `<script>
 (function(){
-    // Block all native dialogs that freeze iOS WKWebView sandboxed iframes
-    window.confirm = function(){ return true; };
-    window.alert = function(){};
+    // iOS freeze protection
+    window.alert  = function(msg){ console.log('[quiz]', msg); };
     window.prompt = function(){ return null; };
-    window.print = function(){};
+    window.print  = function(){};
     window.onbeforeunload = null;
-    
-    // Block beforeunload/unload event registration
-    var origAddEventListener = window.addEventListener;
+
+    // beforeunload block karo
+    var _ael = window.addEventListener;
     window.addEventListener = function(type, fn, cap){
         if(type === 'beforeunload' || type === 'unload') return;
-        return origAddEventListener.call(this, type, fn, cap);
+        return _ael.call(this, type, fn, cap);
     };
-    
-    // Also hook into document.addEventListener for the same
-    var docOrigAddEventListener = document.addEventListener;
-    document.addEventListener = function(type, fn, cap){
-        if(type === 'beforeunload' || type === 'unload') return;
-        return docOrigAddEventListener.call(this, type, fn, cap);
-    };
-    
-    // Fix: Defer heavy DOM manipulations to prevent iOS main thread blocking
-    var origInnerHTML = Object.getOwnPropertyDescriptor(Element.prototype, 'innerHTML');
-    if(origInnerHTML && origInnerHTML.set){
-        Object.defineProperty(Element.prototype, 'innerHTML', {
-            set: function(val){
-                var self = this;
-                var args = arguments;
-                // If setting a very large HTML string, defer it
-                if(val && val.length > 5000){
-                    setTimeout(function(){
-                        origInnerHTML.set.apply(self, args);
-                    }, 0);
-                } else {
-                    origInnerHTML.set.apply(self, args);
-                }
-            },
-            get: origInnerHTML.get
-        });
+
+    // Custom confirm dialog - pure DOM, sandboxed iframe safe
+    function showKagaziConfirm(message, onYes) {
+        var lines = message.split('\n').filter(function(l){ return l.trim(); });
+        var title = lines[0] || 'Submit Quiz?';
+        var sub   = lines.slice(1).join(' ').trim();
+
+        var ov = document.createElement('div');
+        ov.id  = '__kz_ov';
+        ov.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,sans-serif;';
+
+        ov.innerHTML =
+            '<div style="background:#fff;border-radius:20px;padding:28px 22px;max-width:300px;width:88%;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.4);">' +
+            '<div style="font-size:19px;font-weight:800;color:#4f46e5;margin-bottom:10px;">' + title + '</div>' +
+            (sub ? '<div style="font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:18px;">&#9888;&#65039; ' + sub + '</div>' : '<div style="margin-bottom:12px;"></div>') +
+            '<div style="display:flex;gap:10px;">' +
+            '<button id="__kz_no"  style="flex:1;padding:14px;border-radius:12px;border:2px solid #cbd5e1;background:#fff;font-size:15px;font-weight:700;cursor:pointer;color:#0f172a;">Cancel</button>' +
+            '<button id="__kz_yes" style="flex:1;padding:14px;border-radius:12px;border:none;background:#4f46e5;color:#fff;font-size:15px;font-weight:800;cursor:pointer;">Submit &#10003;</button>' +
+            '</div></div>';
+
+        document.body.appendChild(ov);
+
+        function closeOv(){ var o = document.getElementById('__kz_ov'); if(o) o.remove(); }
+
+        var yesBtn = document.getElementById('__kz_yes');
+        var noBtn  = document.getElementById('__kz_no');
+        yesBtn.addEventListener('click',    function(){ closeOv(); onYes(); });
+        yesBtn.addEventListener('touchend', function(e){ e.preventDefault(); closeOv(); onYes(); });
+        noBtn.addEventListener('click',     closeOv);
+        noBtn.addEventListener('touchend',  function(e){ e.preventDefault(); closeOv(); });
     }
+
+    // Submit button hijack after page load
+    // Clone karo = sab purane listeners remove, apna lagao
+    window.addEventListener('load', function(){
+        var btn = document.getElementById('submitBtn');
+        if (!btn) return;
+
+        var newBtn = btn.cloneNode(true);
+        btn.parentNode.replaceChild(newBtn, btn);
+
+        var busy = false;
+        function handleSubmit(){
+            if (busy) return;
+            busy = true;
+            setTimeout(function(){ busy = false; }, 600);
+
+            var unattempted = 0;
+            try {
+                if (typeof questions !== 'undefined' && typeof answers !== 'undefined') {
+                    unattempted = questions.length - Object.keys(answers).length;
+                }
+            } catch(e){}
+
+            var msg = 'Are you sure you want to submit the quiz?';
+            if (unattempted > 0) {
+                msg += '\n\nYou have ' + unattempted + ' unanswered question(s).';
+            }
+
+            showKagaziConfirm(msg, function(){
+                if (typeof submitQuiz === 'function') submitQuiz();
+            });
+        }
+
+        newBtn.addEventListener('click',    handleSubmit);
+        newBtn.addEventListener('touchend', function(e){ e.preventDefault(); handleSubmit(); });
+    });
 })();
 <\/script>`;
                     document.getElementById("quizIframe").srcdoc = antiFreezeScript + quizNode.quizHTML;
