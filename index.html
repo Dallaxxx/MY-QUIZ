@@ -1,14 +1,24 @@
-Right index.HTML 
-
-
-
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-                <title>Kagazi Engine Pro Max</title>
-                <style>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 26.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;
+                &lt;title&gt;Kagazi Engine Pro Max&lt;/title&gt;
+                &lt;style&gt;
                     :root {
                         --bg-workspace: #f1f5f9; --bg-surface: #ffffff;
                         --accent-indigo: #4f46e5; --color-success: #10b981;
@@ -18,11 +28,13 @@ Right index.HTML
                     }
                     
                     /* THEMES */
-                    body[data-theme="dark"] { --bg-workspace: #0f172a; --bg-surface: #1e293b; --accent-indigo: #818cf8; --text-dark: #f8fafc; --text-muted: #94a3b8; --border-light: #334155; }
-                    body[data-theme="kagazi"] { --bg-workspace: #fdfbf7; --bg-surface: #f4f0e6; --accent-indigo: #d97706; --text-dark: #431407; --border-light: #e7e5e4; }
-                    body[data-theme="xmind-classic"] { --bg-workspace: #f4f5f9; --bg-surface: #ffffff; --accent-indigo: #e45b4b; --color-success: #539d73; --color-danger: #d94b4b; --text-dark: #2c3e50; --text-muted: #7f8c8d; --border-light: #dcdde1; --x-sub: #3498db; --x-top: #2ecc71; --x-quiz: #f1c40f; }
-                    body[data-theme="xmind-zen"] { --bg-workspace: #faf9f5; --bg-surface: #ffffff; --accent-indigo: #334155; --color-success: #4ade80; --text-dark: #1e293b; --border-light: #e2e8f0; --x-sub: #fcd34d; --x-top: #67e8f9; --x-quiz: #cbd5e1; }
+                    body[data-theme=&quot;dark&quot;] { --bg-workspace: #0f172a; --bg-surface: #1e293b; --accent-indigo: #818cf8; --text-dark: #f8fafc; --text-muted: #94a3b8; --border-light: #334155; }
+                    body[data-theme=&quot;kagazi&quot;] { --bg-workspace: #fdfbf7; --bg-surface: #f4f0e6; --accent-indigo: #d97706; --text-dark: #431407; --border-light: #e7e5e4; }
+                    body[data-theme=&quot;xmind-classic&quot;] { --bg-workspace: #f4f5f9; --bg-surface: #ffffff; --accent-indigo: #e45b4b; --color-success: #539d73; --color-danger: #d94b4b; --text-dark: #2c3e50; --text-muted: #7f8c8d; --border-light: #dcdde1; --x-sub: #3498db; --x-top: #2ecc71; --x-quiz: #f1c40f; }
+                    body[data-theme=&quot;xmind-zen&quot;] { --bg-workspace: #faf9f5; --bg-surface: #ffffff; --accent-indigo: #334155; --color-success: #4ade80; --text-dark: #1e293b; --border-light: #e2e8f0; --x-sub: #fcd34d; --x-top: #67e8f9; --x-quiz: #cbd5e1; }
                     
+                    body[data-theme=&quot;monochrome&quot;] { --bg-workspace: #000000; --bg-surface: #0a0a0a; --accent-indigo: #ffffff; --color-success: #888888; --color-danger: #ff3333; --color-warning: #aaaaaa; --text-dark: #f5f5f5; --text-muted: #666666; --border-light: #222222; }
+
                     * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
                     body, html { width: 100%; height: 100%; overflow: hidden; background-color: var(--bg-workspace); color: var(--text-dark); user-select: none; -webkit-user-select: none; transition: background-color 0.3s ease; }
                     
@@ -31,7 +43,8 @@ Right index.HTML
                     /* NAVBAR */
                     .top-navbar { position: absolute; top: 0; left: 0; width: 100%; height: 65px; background: var(--bg-surface); border-bottom: 1px solid var(--border-light); z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
                     .profile-trigger { display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 6px; border-radius: 20px; }
-                    .profile-avatar { width: 32px; height: 32px; background: var(--accent-indigo); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+                    .profile-avatar { width: 32px; height: 32px; background: var(--accent-indigo); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; overflow: hidden; }
+                    .profile-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
                     .profile-name { font-weight: 700; font-size: 15px; }
                     
                     .tab-switcher { display: flex; background: var(--bg-workspace); padding: 4px; border-radius: 10px; gap: 4px; }
@@ -45,7 +58,7 @@ Right index.HTML
                     /* DRAWER - REDESIGNED */
                     .drawer-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.4); z-index: 999; display: none; opacity: 0; transition: opacity 0.3s; }
                     .drawer-overlay.active { display: block; opacity: 1; }
-                    .settings-drawer { position: fixed; top: 0; left: -340px; width: 320px; height: 100%; background: var(--bg-surface); z-index: 1000; transition: left 0.3s; padding: 20px; display: flex; flex-direction: column; box-shadow: 5px 0 25px rgba(0,0,0,0.1); overflow-y:auto; }
+                    .settings-drawer { position: fixed; top: 0; left: -340px; width: 320px; height: 100%; background: var(--bg-surface); z-index: 1000; transition: left 0.3s; padding: 20px; display: flex; flex-direction: column; box-shadow: 5px 0 25px rgba(0,0,0,0.1); overflow-y: hidden !important; }
                     .settings-drawer.active { left: 0; }
                     
                     .drawer-header { font-size: 22px; font-weight: 800; color: var(--accent-indigo); }
@@ -71,13 +84,52 @@ Right index.HTML
                     .drawer-btn-danger { background: rgba(239,68,68,0.08); color: var(--color-danger); border-color: rgba(239,68,68,0.3); }
                     .drawer-btn-danger:active { background: rgba(239,68,68,0.15); }
                     
+                    /* DRAWER PAGES SYSTEM */
+                    .drawer-header-row { display:flex; justify-content:space-between; align-items:center; flex-shrink:0; }
+                    .drawer-pages-container { position: relative; flex: 1; overflow: hidden; margin-top: 8px; display: flex; flex-direction: column; }
+                    .drawer-page { position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow-y: auto; transition: transform 0.25s ease, opacity 0.25s ease; opacity: 0; pointer-events: none; transform: translateX(15px); padding-right: 4px; }
+                    .drawer-page.active { opacity: 1; pointer-events: auto; transform: translateX(0); }
+                    
+                    /* Profile Card in Main Settings */
+                    .settings-profile-card { display: flex; align-items: center; gap: 14px; padding: 20px; background: linear-gradient(135deg, var(--accent-indigo), var(--color-success)); color: white; border-radius: 20px; margin: 16px 0 24px; cursor: pointer; box-shadow: 0 10px 20px rgba(0,0,0,0.15); transition: transform 0.2s; }
+                    .settings-profile-card:active { transform: scale(0.98); }
+                    .settings-profile-avatar { width: 50px; height: 50px; border-radius: 50%; background: rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-size: 24px; flex-shrink: 0; overflow: hidden; }
+                    .settings-profile-avatar img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+                    .settings-profile-info { flex: 1; }
+                    .settings-profile-name { font-weight: 800; font-size: 17px; }
+                    .settings-profile-sub { font-size: 13px; opacity: 0.9; margin-top: 3px; }
+                    
+                    /* Settings Menu Rows */
+                    .settings-menu-row { display: flex; align-items: center; gap: 14px; padding: 16px; background: var(--bg-workspace); border-radius: 14px; margin-bottom: 10px; cursor: pointer; border: 1px solid var(--border-light); transition: all 0.2s; }
+                    .settings-menu-row:active { transform: scale(0.98); background: var(--bg-surface); }
+                    .settings-menu-icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(79,70,229,0.1); color: var(--accent-indigo); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+                    .settings-menu-text { flex: 1; }
+                    .settings-menu-text div:first-child { font-weight: 700; font-size: 15px; color: var(--text-dark); }
+                    .settings-menu-text div:last-child { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+                    .settings-menu-chevron { color: var(--text-muted); font-size: 20px; font-weight: 300; }
+                    
+                    /* Drawer Footer */
+                    .drawer-footer-text { text-align: center; margin-top: auto; padding: 20px 0 10px; font-size: 12px; color: var(--text-muted); font-weight: 600; opacity: 0.7; }
+                    
+                    /* Back Header */
+                    .drawer-back-header { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; padding: 4px 0 16px; border-bottom: 1px solid var(--border-light); flex-shrink: 0; }
+                    .drawer-back-btn { width: 36px; height: 36px; border-radius: 10px; border: none; background: var(--bg-workspace); color: var(--text-dark); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+                    .drawer-back-btn:active { background: var(--border-light); }
+                    .drawer-page-title { font-size: 18px; font-weight: 800; color: var(--text-dark); }
+                    
+                    /* Profile Edit Page */
+                    .profile-photo-section { text-align: center; padding: 10px 0 20px; }
+                    .profile-photo-preview { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid var(--border-light); margin: 0 auto 14px; display: block; background: var(--bg-workspace); }
+                    .profile-photo-btn { display: inline-block; padding: 10px 20px; background: var(--accent-indigo); color: white; border-radius: 10px; font-weight: 700; font-size: 14px; cursor: pointer; border: none; transition: transform 0.1s; }
+                    .profile-photo-btn:active { transform: scale(0.95); }
+                    
                     /* SYLLABUS */
                     .app-view { position: absolute; top: 65px; left: 0; width: 100%; height: calc(100% - 65px); display: none; }
                     .app-view.active { display: block; }
                     .syllabus-header-bar { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: var(--bg-surface); border-bottom: 1px solid var(--border-light); }
                     .breadcrumbs-container { display: flex; gap: 6px; }
                     .crumb-step { font-size: 16px; font-weight: 600; color: var(--text-muted); cursor: pointer; }
-                    .crumb-step:not(:last-child)::after { content: "›"; margin-left: 8px; }
+                    .crumb-step:not(:last-child)::after { content: &quot;›&quot;; margin-left: 8px; }
                     .crumb-step:last-child { color: var(--text-dark); font-weight: 800; pointer-events: none; }
                     .add-main-btn { padding: 12px 20px; border-radius: 10px; background: var(--accent-indigo); color: white; border: none; font-weight: 700; font-size: 15px; cursor: pointer; }
                     
@@ -144,20 +196,20 @@ Right index.HTML
                     .map-node-attempts { display: flex; gap: 4px; margin-top: 8px; flex-wrap: wrap; justify-content: center; }
                     .attempt-chip { font-size: 11px; padding: 3px 8px; border-radius: 6px; background: var(--bg-workspace); border: 1px solid var(--border-light); color: var(--text-muted); font-weight: 700; }
                     
-                    body[data-theme="xmind-classic"] .level-exam .map-node-card { background: var(--accent-indigo); color: white; border-radius: 12px;}
-                    body[data-theme="xmind-classic"] .level-subject .map-node-card { background: var(--x-sub); color: white; border-radius: 24px;}
-                    body[data-theme="xmind-classic"] .level-topic .map-node-card { border-color: var(--x-top); color: var(--text-dark); border-width: 3px;}
-                    body[data-theme="xmind-classic"] .level-quiz .map-node-card { border-color: var(--x-quiz); border-width: 3px;}
+                    body[data-theme=&quot;xmind-classic&quot;] .level-exam .map-node-card { background: var(--accent-indigo); color: white; border-radius: 12px;}
+                    body[data-theme=&quot;xmind-classic&quot;] .level-subject .map-node-card { background: var(--x-sub); color: white; border-radius: 24px;}
+                    body[data-theme=&quot;xmind-classic&quot;] .level-topic .map-node-card { border-color: var(--x-top); color: var(--text-dark); border-width: 3px;}
+                    body[data-theme=&quot;xmind-classic&quot;] .level-quiz .map-node-card { border-color: var(--x-quiz); border-width: 3px;}
                     
-                    body[data-theme="xmind-zen"] .level-exam .map-node-card { background: var(--accent-indigo); color: white; border-radius: 35px;}
-                    body[data-theme="xmind-zen"] .level-subject .map-node-card { background: var(--x-sub); color: var(--text-dark); border-radius: 35px;}
-                    body[data-theme="xmind-zen"] .level-topic .map-node-card { background: var(--x-top); color: var(--text-dark); border-radius: 35px;}
-                    body[data-theme="xmind-zen"] .level-quiz .map-node-card { background: var(--x-quiz); border-radius: 35px;}
+                    body[data-theme=&quot;xmind-zen&quot;] .level-exam .map-node-card { background: var(--accent-indigo); color: white; border-radius: 35px;}
+                    body[data-theme=&quot;xmind-zen&quot;] .level-subject .map-node-card { background: var(--x-sub); color: var(--text-dark); border-radius: 35px;}
+                    body[data-theme=&quot;xmind-zen&quot;] .level-topic .map-node-card { background: var(--x-top); color: var(--text-dark); border-radius: 35px;}
+                    body[data-theme=&quot;xmind-zen&quot;] .level-quiz .map-node-card { background: var(--x-quiz); border-radius: 35px;}
                     
-                    body:not([data-theme*="xmind"]) .level-exam .map-node-card { background: var(--accent-indigo); color: white; }
-                    body:not([data-theme*="xmind"]) .level-subject .map-node-card { border-color: var(--accent-indigo); background: #f8faff; border-width: 3px; }
-                    body:not([data-theme*="xmind"]) .level-topic .map-node-card { border: 3px solid var(--border-light); background: var(--bg-surface); }
-                    body:not([data-theme*="xmind"]) .level-quiz .map-node-card { border: 3px dashed var(--border-light); background: var(--bg-surface); }
+                    body:not([data-theme*=&quot;xmind&quot;]) .level-exam .map-node-card { background: var(--accent-indigo); color: white; }
+                    body:not([data-theme*=&quot;xmind&quot;]) .level-subject .map-node-card { border-color: var(--accent-indigo); background: #f8faff; border-width: 3px; }
+                    body:not([data-theme*=&quot;xmind&quot;]) .level-topic .map-node-card { border: 3px solid var(--border-light); background: var(--bg-surface); }
+                    body:not([data-theme*=&quot;xmind&quot;]) .level-quiz .map-node-card { border: 3px dashed var(--border-light); background: var(--bg-surface); }
                     .level-quiz.status-discarded .map-node-card { opacity: 0.5; }
                     
                     .node-expander-btn { width: 28px; height: 28px; border-radius: 50%; background: var(--bg-surface); border: 2px solid var(--border-light); box-shadow: 0 2px 6px rgba(0,0,0,0.15); font-size: 14px; display: flex; align-items: center; justify-content: center; cursor: pointer; position: absolute; z-index: 10; pointer-events: auto; font-weight: bold; color: var(--text-dark);}
@@ -173,152 +225,212 @@ Right index.HTML
                     #quizFrameHeader h3 { color: var(--accent-indigo); font-size: 16px; font-weight: 800; flex: 1; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
                     .header-action-btn { padding: 10px 16px; border-radius: 10px; border:none; font-weight:700; cursor: pointer; font-size: 14px; transition: transform 0.1s; white-space: nowrap; color: white; }
                     .header-action-btn:active { transform: scale(0.95); }
-                </style>
-    </head>
-    <body>
-        <div class="top-navbar">
-            <div class="profile-trigger" onclick="toggleSettingsDrawer(true)">
-                <div class="profile-avatar">👤</div>
-                <div class="profile-name">Engine Master</div>
-            </div>
-            <div class="tab-switcher">
-                <button id="tabBtnSyllabus" class="tab-btn active">🗂️ Syllabus</button>
-                <button id="tabBtnMindMap" class="tab-btn">🧠 Map</button>
-            </div>
-            <div id="globalFireBadge" class="global-fire-badge">
-                <span class="fire-emoji">🔥</span>
-                <span id="globalFireText">0%</span>
-            </div>
-        </div>
+                &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;top-navbar&quot;&gt;
+            &lt;div class=&quot;profile-trigger&quot; onclick=&quot;toggleSettingsDrawer(true)&quot;&gt;
+                &lt;div class=&quot;profile-avatar&quot;&gt;👤&lt;/div&gt;
+                &lt;div class=&quot;profile-name&quot;&gt;Engine Master&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;tab-switcher&quot;&gt;
+                &lt;button id=&quot;tabBtnSyllabus&quot; class=&quot;tab-btn active&quot;&gt;🗂️ Syllabus&lt;/button&gt;
+                &lt;button id=&quot;tabBtnMindMap&quot; class=&quot;tab-btn&quot;&gt;🧠 Map&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;globalFireBadge&quot; class=&quot;global-fire-badge&quot;&gt;
+                &lt;span class=&quot;fire-emoji&quot;&gt;🔥&lt;/span&gt;
+                &lt;span id=&quot;globalFireText&quot;&gt;0%&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="drawerOverlay" class="drawer-overlay" onclick="toggleSettingsDrawer(false)"></div>
-        <div id="settingsDrawer" class="settings-drawer">
-            <div style="display:flex; justify-content:space-between; align-items:center;">
-                <div class="drawer-header">⚙️ Settings</div>
-                <button class="drawer-close-btn" onclick="toggleSettingsDrawer(false)">✕</button>
-            </div>
+        &lt;div id=&quot;drawerOverlay&quot; class=&quot;drawer-overlay&quot; onclick=&quot;toggleSettingsDrawer(false)&quot;&gt;&lt;/div&gt;
+        &lt;div id=&quot;settingsDrawer&quot; class=&quot;settings-drawer&quot;&gt;
+            &lt;div class=&quot;drawer-header-row&quot;&gt;
+                &lt;div class=&quot;drawer-header&quot;&gt;⚙️ Settings&lt;/div&gt;
+                &lt;button class=&quot;drawer-close-btn&quot; onclick=&quot;toggleSettingsDrawer(false)&quot;&gt;✕&lt;/button&gt;
+            &lt;/div&gt;
             
-            <div class="drawer-profile">
-                <div class="drawer-profile-avatar">🎓</div>
-                <div class="drawer-profile-name">Engine Master</div>
-                <div class="drawer-profile-sub">Kagazi Pro Max</div>
-            </div>
+            &lt;div class=&quot;drawer-pages-container&quot;&gt;
+                &lt;div id=&quot;drawerPageMain&quot; class=&quot;drawer-page active&quot;&gt;
+                    &lt;div class=&quot;settings-profile-card&quot; onclick=&quot;openProfileEditPage()&quot;&gt;
+                        &lt;div class=&quot;settings-profile-avatar&quot; id=&quot;drawerProfileAvatar&quot;&gt;🎓&lt;/div&gt;
+                        &lt;div class=&quot;settings-profile-info&quot;&gt;
+                            &lt;div class=&quot;settings-profile-name&quot; id=&quot;drawerProfileName&quot;&gt;Engine Master&lt;/div&gt;
+                            &lt;div class=&quot;settings-profile-sub&quot;&gt;Tap to edit profile&lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;settings-menu-row&quot; onclick=&quot;openThemePage()&quot;&gt;
+                        &lt;div class=&quot;settings-menu-icon&quot;&gt;🎨&lt;/div&gt;
+                        &lt;div class=&quot;settings-menu-text&quot;&gt;
+                            &lt;div&gt;Appearance&lt;/div&gt;
+                            &lt;div id=&quot;currentThemeLabel&quot;&gt;Light&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;settings-menu-chevron&quot;&gt;›&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;settings-menu-row&quot; onclick=&quot;openDataPage()&quot;&gt;
+                        &lt;div class=&quot;settings-menu-icon&quot;&gt;💾&lt;/div&gt;
+                        &lt;div class=&quot;settings-menu-text&quot;&gt;
+                            &lt;div&gt;Data &amp; Backup&lt;/div&gt;
+                            &lt;div&gt;Export, Import &amp; Restore&lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;settings-menu-chevron&quot;&gt;›&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;drawer-footer-text&quot;&gt;Kagazi Engine Pro Max&lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div id=&quot;drawerPageProfile&quot; class=&quot;drawer-page&quot;&gt;
+                    &lt;div class=&quot;drawer-back-header&quot;&gt;
+                        &lt;button class=&quot;drawer-back-btn&quot; onclick=&quot;goBackToMain()&quot;&gt;‹&lt;/button&gt;
+                        &lt;div class=&quot;drawer-page-title&quot;&gt;Edit Profile&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;profile-photo-section&quot;&gt;
+                        &lt;img id=&quot;profilePhotoPreview&quot; class=&quot;profile-photo-preview&quot; src=&quot;&quot; alt=&quot;Profile&quot; style=&quot;display:none;&quot;&gt;
+                        &lt;div id=&quot;profilePhotoPlaceholder&quot; class=&quot;profile-photo-preview&quot; style=&quot;display:flex; align-items:center; justify-content:center; font-size:48px; background:var(--bg-workspace);&quot;&gt;🎓&lt;/div&gt;
+                        &lt;button class=&quot;profile-photo-btn&quot; onclick=&quot;document.getElementById('profilePhotoInput').click()&quot;&gt;📷 Choose Photo&lt;/button&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div style=&quot;margin-bottom:16px;&quot;&gt;
+                        &lt;label style=&quot;font-size:12px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:8px; display:block;&quot;&gt;Display Name&lt;/label&gt;
+                        &lt;input type=&quot;text&quot; id=&quot;profileNameInput&quot; class=&quot;modal-styled-input&quot; style=&quot;margin:0; font-size:16px;&quot; placeholder=&quot;Your name&quot; autocomplete=&quot;off&quot;&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;button class=&quot;modal-btn btn-accent&quot; onclick=&quot;saveProfileChanges()&quot; style=&quot;margin-bottom:12px;&quot;&gt;💾 Save Changes&lt;/button&gt;
+                &lt;/div&gt;
+                
+                &lt;div id=&quot;drawerPageTheme&quot; class=&quot;drawer-page&quot;&gt;
+                    &lt;div class=&quot;drawer-back-header&quot;&gt;
+                        &lt;button class=&quot;drawer-back-btn&quot; onclick=&quot;goBackToMain()&quot;&gt;‹&lt;/button&gt;
+                        &lt;div class=&quot;drawer-page-title&quot;&gt;Appearance&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;drawer-section&quot; style=&quot;margin-bottom:0;&quot;&gt;
+                        &lt;div class=&quot;theme-grid&quot; id=&quot;themeGrid&quot;&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('light')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#f8fafc; border-color:#cbd5e1;&quot;&gt;&lt;/span&gt; Light&lt;/button&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('dark')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#1e293b;&quot;&gt;&lt;/span&gt; Dark&lt;/button&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('kagazi')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#f4f0e6;&quot;&gt;&lt;/span&gt; Kagazi&lt;/button&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('xmind-classic')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#e45b4b;&quot;&gt;&lt;/span&gt; XMind&lt;/button&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('xmind-zen')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#334155;&quot;&gt;&lt;/span&gt; Zen&lt;/button&gt;
+                            &lt;button class=&quot;theme-chip&quot; onclick=&quot;setTheme('monochrome')&quot;&gt;&lt;span class=&quot;theme-dot&quot; style=&quot;background:#000000; border-color:#333;&quot;&gt;&lt;/span&gt; Mono&lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div id=&quot;drawerPageData&quot; class=&quot;drawer-page&quot;&gt;
+                    &lt;div class=&quot;drawer-back-header&quot;&gt;
+                        &lt;button class=&quot;drawer-back-btn&quot; onclick=&quot;goBackToMain()&quot;&gt;‹&lt;/button&gt;
+                        &lt;div class=&quot;drawer-page-title&quot;&gt;Data &amp; Backup&lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;drawer-section&quot;&gt;
+                        &lt;button class=&quot;drawer-btn&quot; onclick=&quot;triggerBackupExport()&quot;&gt;📤 Export Backup (.json)&lt;/button&gt;
+                        &lt;button class=&quot;drawer-btn&quot; onclick=&quot;triggerBackupImport()&quot;&gt;📥 Import / Restore&lt;/button&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;drawer-section&quot; style=&quot;margin-top:20px;&quot;&gt;
+                        &lt;div class=&quot;drawer-section-title&quot; style=&quot;color:var(--color-danger);&quot;&gt;⚠️ Danger Zone&lt;/div&gt;
+                        &lt;button class=&quot;drawer-btn drawer-btn-danger&quot; onclick=&quot;hardResetData()&quot;&gt;🗑️ Erase All Data&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
             
-            <div class="drawer-section">
-                <div class="drawer-section-title">🎨 Appearance</div>
-                <div class="theme-grid" id="themeGrid">
-                    <button class="theme-chip" onclick="setTheme('light')"><span class="theme-dot" style="background:#f8fafc; border-color:#cbd5e1;"></span> Light</button>
-                    <button class="theme-chip" onclick="setTheme('dark')"><span class="theme-dot" style="background:#1e293b;"></span> Dark</button>
-                    <button class="theme-chip" onclick="setTheme('kagazi')"><span class="theme-dot" style="background:#f4f0e6;"></span> Kagazi</button>
-                    <button class="theme-chip" onclick="setTheme('xmind-classic')"><span class="theme-dot" style="background:#e45b4b;"></span> XMind</button>
-                    <button class="theme-chip" onclick="setTheme('xmind-zen')"><span class="theme-dot" style="background:#334155;"></span> Zen</button>
-                </div>
-            </div>
-            
-            <div class="drawer-section">
-                <div class="drawer-section-title">💾 Data & Backup</div>
-                <button class="drawer-btn" onclick="triggerBackupExport()">📤 Export Backup (.json)</button>
-                <button class="drawer-btn" onclick="triggerBackupImport()">📥 Import / Restore</button>
-            </div>
-            
-            <div class="drawer-section" style="margin-top:auto; padding-bottom:20px;">
-                <div class="drawer-section-title" style="color:var(--color-danger);">⚠️ Danger Zone</div>
-                <button class="drawer-btn drawer-btn-danger" onclick="hardResetData()">🗑️ Erase All Data</button>
-            </div>
-            
-            <input type="file" id="quizImportInput" style="display:none;" accept=".html, .htm">
-            <input type="file" id="jsonImportInput" style="display:none;" accept=".json">
-        </div>
+            &lt;input type=&quot;file&quot; id=&quot;quizImportInput&quot; style=&quot;display:none;&quot; accept=&quot;.html, .htm&quot;&gt;
+            &lt;input type=&quot;file&quot; id=&quot;jsonImportInput&quot; style=&quot;display:none;&quot; accept=&quot;.json&quot;&gt;
+            &lt;input type=&quot;file&quot; id=&quot;profilePhotoInput&quot; style=&quot;display:none;&quot; accept=&quot;image/*&quot;&gt;
+        &lt;/div&gt;
         
-        <div id="viewSyllabus" class="app-view active">
-            <div class="syllabus-header-bar">
-                <div id="breadcrumbs" class="breadcrumbs-container"><span class="crumb-step" onclick="navigateBreadcrumb(-1)">All Exams</span></div>
-                <button id="addNodeBtn" class="add-main-btn">➕ Add <span id="addLevelLabel">Exam</span></button>
-            </div>
-            <div id="syllabusListWrapper" class="list-wrapper-container"></div>
-        </div>
+        &lt;div id=&quot;viewSyllabus&quot; class=&quot;app-view active&quot;&gt;
+            &lt;div class=&quot;syllabus-header-bar&quot;&gt;
+                &lt;div id=&quot;breadcrumbs&quot; class=&quot;breadcrumbs-container&quot;&gt;&lt;span class=&quot;crumb-step&quot; onclick=&quot;navigateBreadcrumb(-1)&quot;&gt;All Exams&lt;/span&gt;&lt;/div&gt;
+                &lt;button id=&quot;addNodeBtn&quot; class=&quot;add-main-btn&quot;&gt;➕ Add &lt;span id=&quot;addLevelLabel&quot;&gt;Exam&lt;/span&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;syllabusListWrapper&quot; class=&quot;list-wrapper-container&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="viewMindMap" class="app-view">
-            <div class="map-controls-panel">
-                <label style="font-size:15px; font-weight:bold;">Exam:</label>
-                <select id="mapExamSelect" class="control-dropdown"></select>
-                <label style="font-size:15px; font-weight:bold; margin-left:15px;">Layout:</label>
-                <select id="mapLayoutSelect" class="control-dropdown">
-                    <option value="radial">Radial</option>
-                    <option value="tree">Tree</option>
-                </select>
-            </div>
-            <div id="mapViewport" class="map-viewport-surface">
-                <div id="mapCanvas" class="map-canvas-plane">
-                    <svg id="svgTraceLayer" class="svg-trace-layer"></svg>
-                    <div id="mapNodesLayer" class="map-nodes-layer"></div>
-                </div>
-            </div>
-            <div class="floating-hud-compass">
-                <button class="hud-circle-btn" onclick="zoomCenter(1.2)">➕</button>
-                <button class="hud-circle-btn" onclick="zoomCenter(0.8)">➖</button>
-                <button class="hud-circle-btn" onclick="centerMindMap()">🎯</button>
-            </div>
-        </div>
+        &lt;div id=&quot;viewMindMap&quot; class=&quot;app-view&quot;&gt;
+            &lt;div class=&quot;map-controls-panel&quot;&gt;
+                &lt;label style=&quot;font-size:15px; font-weight:bold;&quot;&gt;Exam:&lt;/label&gt;
+                &lt;select id=&quot;mapExamSelect&quot; class=&quot;control-dropdown&quot;&gt;&lt;/select&gt;
+                &lt;label style=&quot;font-size:15px; font-weight:bold; margin-left:15px;&quot;&gt;Layout:&lt;/label&gt;
+                &lt;select id=&quot;mapLayoutSelect&quot; class=&quot;control-dropdown&quot;&gt;
+                    &lt;option value=&quot;radial&quot;&gt;Radial&lt;/option&gt;
+                    &lt;option value=&quot;tree&quot;&gt;Tree&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div id=&quot;mapViewport&quot; class=&quot;map-viewport-surface&quot;&gt;
+                &lt;div id=&quot;mapCanvas&quot; class=&quot;map-canvas-plane&quot;&gt;
+                    &lt;svg id=&quot;svgTraceLayer&quot; class=&quot;svg-trace-layer&quot;&gt;&lt;/svg&gt;
+                    &lt;div id=&quot;mapNodesLayer&quot; class=&quot;map-nodes-layer&quot;&gt;&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;floating-hud-compass&quot;&gt;
+                &lt;button class=&quot;hud-circle-btn&quot; onclick=&quot;zoomCenter(1.2)&quot;&gt;➕&lt;/button&gt;
+                &lt;button class=&quot;hud-circle-btn&quot; onclick=&quot;zoomCenter(0.8)&quot;&gt;➖&lt;/button&gt;
+                &lt;button class=&quot;hud-circle-btn&quot; onclick=&quot;centerMindMap()&quot;&gt;🎯&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="mutationModal" class="modal-overlay-shield">
-            <div class="modal-card-box">
-                <h3 id="modalBoxTitle">Title</h3>
-                <input type="text" id="modalTextInput" class="modal-styled-input" autocomplete="off">
-                    <button class="modal-btn btn-accent" id="modalBtnSave">Save</button>
-                    <button class="modal-btn btn-cancel" onclick="document.getElementById('mutationModal').classList.remove('active')">Cancel</button>
-            </div>
-        </div>
+        &lt;div id=&quot;mutationModal&quot; class=&quot;modal-overlay-shield&quot;&gt;
+            &lt;div class=&quot;modal-card-box&quot;&gt;
+                &lt;h3 id=&quot;modalBoxTitle&quot;&gt;Title&lt;/h3&gt;
+                &lt;input type=&quot;text&quot; id=&quot;modalTextInput&quot; class=&quot;modal-styled-input&quot; autocomplete=&quot;off&quot;&gt;
+                    &lt;button class=&quot;modal-btn btn-accent&quot; id=&quot;modalBtnSave&quot;&gt;Save&lt;/button&gt;
+                    &lt;button class=&quot;modal-btn btn-cancel&quot; onclick=&quot;document.getElementById('mutationModal').classList.remove('active')&quot;&gt;Cancel&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="iosSystemAlertModal" class="modal-overlay-shield">
-            <div class="ios-alert-container">
-                <div class="ios-alert-body">
-                    <h3 id="iosAlertTitle">Alert Title</h3>
-                    <p id="iosAlertDesc">Alert Description text goes here.</p>
-                    <textarea id="iosAlertTextField" style="display:none; width:100%; height:180px; margin-top:15px; font-size:13px; padding:12px; border-radius:8px; border:1px solid var(--border-light);" autocomplete="off"></textarea>
-                    <button id="copyTextBtn" style="display:none; margin-top:12px; width:100%; padding:14px; border-radius:8px; border:none; background:var(--color-success); color:white; font-size:16px; font-weight:bold; cursor:pointer;" onclick="copyBackupText()">📋 Copy to Clipboard</button>
-                </div>
-                <div id="iosAlertButtonDock" class="ios-alert-button-dock"></div>
-            </div>
-        </div>
+        &lt;div id=&quot;iosSystemAlertModal&quot; class=&quot;modal-overlay-shield&quot;&gt;
+            &lt;div class=&quot;ios-alert-container&quot;&gt;
+                &lt;div class=&quot;ios-alert-body&quot;&gt;
+                    &lt;h3 id=&quot;iosAlertTitle&quot;&gt;Alert Title&lt;/h3&gt;
+                    &lt;p id=&quot;iosAlertDesc&quot;&gt;Alert Description text goes here.&lt;/p&gt;
+                    &lt;textarea id=&quot;iosAlertTextField&quot; style=&quot;display:none; width:100%; height:180px; margin-top:15px; font-size:13px; padding:12px; border-radius:8px; border:1px solid var(--border-light);&quot; autocomplete=&quot;off&quot;&gt;&lt;/textarea&gt;
+                    &lt;button id=&quot;copyTextBtn&quot; style=&quot;display:none; margin-top:12px; width:100%; padding:14px; border-radius:8px; border:none; background:var(--color-success); color:white; font-size:16px; font-weight:bold; cursor:pointer;&quot; onclick=&quot;copyBackupText()&quot;&gt;📋 Copy to Clipboard&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div id=&quot;iosAlertButtonDock&quot; class=&quot;ios-alert-button-dock&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="scoreEntryModal" class="modal-overlay-shield">
-            <div class="modal-card-box" style="max-width: 360px; width: 90%;">
-                <h3 id="scoreModalTitle">Log Score</h3>
-                <div id="numpadDisplay" class="numpad-display">-- / --</div>
-                <div class="numpad-grid">
-                    <button class="numpad-btn" onclick="pressNumpad('1')">1</button>
-                    <button class="numpad-btn" onclick="pressNumpad('2')">2</button>
-                    <button class="numpad-btn" onclick="pressNumpad('3')">3</button>
-                    <button class="numpad-btn" onclick="pressNumpad('4')">4</button>
-                    <button class="numpad-btn" onclick="pressNumpad('5')">5</button>
-                    <button class="numpad-btn" onclick="pressNumpad('6')">6</button>
-                    <button class="numpad-btn" onclick="pressNumpad('7')">7</button>
-                    <button class="numpad-btn" onclick="pressNumpad('8')">8</button>
-                    <button class="numpad-btn" onclick="pressNumpad('9')">9</button>
-                    <button class="numpad-btn numpad-special" onclick="pressNumpad('/')">/</button>
-                    <button class="numpad-btn" onclick="pressNumpad('0')">0</button>
-                    <button class="numpad-btn numpad-special" onclick="pressNumpad('backspace')">⌫</button>
-                </div>
-                <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
-                    <button class="modal-btn btn-accent" onclick="saveNumpadScore()">💾 Save Score</button>
-                    <button class="modal-btn btn-destructive" onclick="quitFromScoreModal()">🚪 Quit Without Saving</button>
-                    <button class="modal-btn btn-cancel" onclick="closeScoreModal()">Cancel</button>
-                </div>
-            </div>
-        </div>
+        &lt;div id=&quot;scoreEntryModal&quot; class=&quot;modal-overlay-shield&quot;&gt;
+            &lt;div class=&quot;modal-card-box&quot; style=&quot;max-width: 360px; width: 90%;&quot;&gt;
+                &lt;h3 id=&quot;scoreModalTitle&quot;&gt;Log Score&lt;/h3&gt;
+                &lt;div id=&quot;numpadDisplay&quot; class=&quot;numpad-display&quot;&gt;-- / --&lt;/div&gt;
+                &lt;div class=&quot;numpad-grid&quot;&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('1')&quot;&gt;1&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('2')&quot;&gt;2&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('3')&quot;&gt;3&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('4')&quot;&gt;4&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('5')&quot;&gt;5&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('6')&quot;&gt;6&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('7')&quot;&gt;7&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('8')&quot;&gt;8&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('9')&quot;&gt;9&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn numpad-special&quot; onclick=&quot;pressNumpad('/')&quot;&gt;/&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn&quot; onclick=&quot;pressNumpad('0')&quot;&gt;0&lt;/button&gt;
+                    &lt;button class=&quot;numpad-btn numpad-special&quot; onclick=&quot;pressNumpad('backspace')&quot;&gt;⌫&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div style=&quot;display: flex; flex-direction: column; gap: 10px; margin-top: 15px;&quot;&gt;
+                    &lt;button class=&quot;modal-btn btn-accent&quot; onclick=&quot;saveNumpadScore()&quot;&gt;💾 Save Score&lt;/button&gt;
+                    &lt;button class=&quot;modal-btn btn-destructive&quot; onclick=&quot;quitFromScoreModal()&quot;&gt;🚪 Quit Without Saving&lt;/button&gt;
+                    &lt;button class=&quot;modal-btn btn-cancel&quot; onclick=&quot;closeScoreModal()&quot;&gt;Cancel&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
         
-        <div id="fullQuizFrameOverlay">
-            <div id="quizFrameHeader">
-                <button class="header-action-btn btn-destructive" onclick="confirmQuizQuit()">Quit</button>
-                <h3 id="activeQuizTitle">Quiz Running...</h3>
-                <button class="header-action-btn btn-accent" onclick="openScoreEntryModal()">📝 Log Score</button>
-            </div>
-            <iframe id="quizIframe" sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals" style="width:100%; height:calc(100% - 75px); border:none; background:white; overflow:auto; -webkit-overflow-scrolling:touch;"></iframe>
-        </div>
+        &lt;div id=&quot;fullQuizFrameOverlay&quot;&gt;
+            &lt;div id=&quot;quizFrameHeader&quot;&gt;
+                &lt;button class=&quot;header-action-btn btn-destructive&quot; onclick=&quot;confirmQuizQuit()&quot;&gt;Quit&lt;/button&gt;
+                &lt;h3 id=&quot;activeQuizTitle&quot;&gt;Quiz Running...&lt;/h3&gt;
+                &lt;button class=&quot;header-action-btn btn-accent&quot; onclick=&quot;openScoreEntryModal()&quot;&gt;📝 Log Score&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;iframe id=&quot;quizIframe&quot; sandbox=&quot;allow-scripts allow-same-origin allow-popups allow-forms allow-modals&quot; style=&quot;width:100%; height:calc(100% - 75px); border:none; background:white; overflow:auto; -webkit-overflow-scrolling:touch;&quot;&gt;&lt;/iframe&gt;
+        &lt;/div&gt;
         
-        <script>
-            // ================= CONFIG & THEMES =================
+        &lt;script&gt;
+            // ================= CONFIG &amp; THEMES =================
             function setTheme(themeName) { 
                 document.body.setAttribute('data-theme', themeName); 
                 localStorage.setItem('kagazi_theme', themeName); 
@@ -328,7 +440,7 @@ Right index.HTML
             
             function highlightActiveTheme() {
                 const current = localStorage.getItem('kagazi_theme') || 'light';
-                document.querySelectorAll('.theme-chip').forEach(btn => {
+                document.querySelectorAll('.theme-chip').forEach(btn =&gt; {
                     const t = btn.getAttribute('onclick').match(/'(.*?)'/)[1];
                     if (t === current) btn.classList.add('active-theme');
                     else btn.classList.remove('active-theme');
@@ -341,7 +453,7 @@ Right index.HTML
                 const keys = ['kagazi_final_db', 'kagazi_pro_v5', 'kagazi_pro_v4', 'kagazi_pro_v3', 'kagazi_data'];
                 for(let key of keys) {
                     let data = localStorage.getItem(key);
-                    if(data) { try { let p = JSON.parse(data); if (Array.isArray(p) && p.length > 0) return p; } catch(e) {} }
+                    if(data) { try { let p = JSON.parse(data); if (Array.isArray(p) &amp;&amp; p.length &gt; 0) return p; } catch(e) {} }
                 }
                 return [];
             }
@@ -349,52 +461,52 @@ Right index.HTML
             function saveData() { localStorage.setItem('kagazi_final_db', JSON.stringify(treeData)); populateExamSelect(); updateGlobalFireBadge(); }
             
             function hardResetData() {
-                triggerIOSAlert("Hard Reset", "DANGER: This will permanently delete ALL your exams and data. This cannot be undone.", false, null, {
+                triggerIOSAlert(&quot;Hard Reset&quot;, &quot;DANGER: This will permanently delete ALL your exams and data. This cannot be undone.&quot;, false, null, {
                     buttons: [
-                    { text: "Delete Everything", styleClass: "btn-destructive", action: () => { localStorage.clear(); treeData = []; saveData(); location.reload(); } },
-                    { text: "Cancel", styleClass: "btn-cancel" }
+                    { text: &quot;Delete Everything&quot;, styleClass: &quot;btn-destructive&quot;, action: () =&gt; { localStorage.clear(); treeData = []; saveData(); location.reload(); } },
+                    { text: &quot;Cancel&quot;, styleClass: &quot;btn-cancel&quot; }
                     ], stacked: true
                 });
             }
             
-            let currentPath = []; let activeView = "syllabus"; 
+            let currentPath = []; let activeView = &quot;syllabus&quot;; 
             let scale = 1.0; let panOffset = { x: 0, y: 0 }; let isDragging = false, startX, startY; 
-            let currentLayout = "radial"; let activeQuizNodeForScoring = null;
+            let currentLayout = &quot;radial&quot;; let activeQuizNodeForScoring = null;
             let selectedMapExamId = localStorage.getItem('kagazi_last_exam') || null;
             let mutationCallback = null;
-            let numpadValue = "";
+            let numpadValue = &quot;&quot;;
             
-            const viewSyllabus = document.getElementById("viewSyllabus"); const viewMindMap = document.getElementById("viewMindMap"); 
-            const syllabusListWrapper = document.getElementById("syllabusListWrapper"); const breadcrumbs = document.getElementById("breadcrumbs"); 
-            const addNodeBtn = document.getElementById("addNodeBtn"); const addLevelLabel = document.getElementById("addLevelLabel"); 
-            const mapViewport = document.getElementById("mapViewport"); const mapCanvas = document.getElementById("mapCanvas"); 
-            const mapNodesLayer = document.getElementById("mapNodesLayer"); const svgTraceLayer = document.getElementById("svgTraceLayer");
-            const mapExamSelect = document.getElementById("mapExamSelect");
+            const viewSyllabus = document.getElementById(&quot;viewSyllabus&quot;); const viewMindMap = document.getElementById(&quot;viewMindMap&quot;); 
+            const syllabusListWrapper = document.getElementById(&quot;syllabusListWrapper&quot;); const breadcrumbs = document.getElementById(&quot;breadcrumbs&quot;); 
+            const addNodeBtn = document.getElementById(&quot;addNodeBtn&quot;); const addLevelLabel = document.getElementById(&quot;addLevelLabel&quot;); 
+            const mapViewport = document.getElementById(&quot;mapViewport&quot;); const mapCanvas = document.getElementById(&quot;mapCanvas&quot;); 
+            const mapNodesLayer = document.getElementById(&quot;mapNodesLayer&quot;); const svgTraceLayer = document.getElementById(&quot;svgTraceLayer&quot;);
+            const mapExamSelect = document.getElementById(&quot;mapExamSelect&quot;);
             
             function toggleSettingsDrawer(open) { 
-                document.getElementById("settingsDrawer").classList.toggle("active", open); 
-                document.getElementById("drawerOverlay").classList.toggle("active", open); 
-                if(open) highlightActiveTheme();
+                document.getElementById(&quot;settingsDrawer&quot;).classList.toggle(&quot;active&quot;, open); 
+                document.getElementById(&quot;drawerOverlay&quot;).classList.toggle(&quot;active&quot;, open); 
+                if(open) { highlightActiveTheme(); goBackToMain(); updateProfileDisplay(); updateThemeLabel(); }
             }
             
             function openMutationModal(title, initialVal, callback) {
-                document.getElementById("modalBoxTitle").innerText = title;
-                let input = document.getElementById("modalTextInput");
-                input.value = initialVal || ""; mutationCallback = callback;
-                document.getElementById("mutationModal").classList.add("active");
-                setTimeout(() => input.focus(), 100);
+                document.getElementById(&quot;modalBoxTitle&quot;).innerText = title;
+                let input = document.getElementById(&quot;modalTextInput&quot;);
+                input.value = initialVal || &quot;&quot;; mutationCallback = callback;
+                document.getElementById(&quot;mutationModal&quot;).classList.add(&quot;active&quot;);
+                setTimeout(() =&gt; input.focus(), 100);
             }
-            document.getElementById("modalBtnSave").onclick = () => {
-                let val = document.getElementById("modalTextInput").value.trim();
-                if(val && mutationCallback) { mutationCallback(val); document.getElementById("mutationModal").classList.remove("active"); }
+            document.getElementById(&quot;modalBtnSave&quot;).onclick = () =&gt; {
+                let val = document.getElementById(&quot;modalTextInput&quot;).value.trim();
+                if(val &amp;&amp; mutationCallback) { mutationCallback(val); document.getElementById(&quot;mutationModal&quot;).classList.remove(&quot;active&quot;); }
             };
             
             // ================= GLOBAL FIRE BADGE =================
             function getGlobalHighestScore() {
-                let highest = { pct: 0, score: "-", name: "" };
+                let highest = { pct: 0, score: &quot;-&quot;, name: &quot;&quot; };
                 function traverse(nodes) {
-                    nodes.forEach(n => {
-                        if (n.type === "Quiz" && n.highestPct > highest.pct) {
+                    nodes.forEach(n =&gt; {
+                        if (n.type === &quot;Quiz&quot; &amp;&amp; n.highestPct &gt; highest.pct) {
                             highest = { pct: n.highestPct, score: n.highestScore, name: n.name };
                         }
                         if (n.children) traverse(n.children);
@@ -405,72 +517,72 @@ Right index.HTML
             }
             
             function updateGlobalFireBadge() {
-                const badge = document.getElementById("globalFireBadge");
-                const text = document.getElementById("globalFireText");
+                const badge = document.getElementById(&quot;globalFireBadge&quot;);
+                const text = document.getElementById(&quot;globalFireText&quot;);
                 const best = getGlobalHighestScore();
-                if (best.pct > 0) {
-                    text.innerText = best.pct.toFixed(1) + "%";
-                    badge.style.display = "flex";
+                if (best.pct &gt; 0) {
+                    text.innerText = best.pct.toFixed(1) + &quot;%&quot;;
+                    badge.style.display = &quot;flex&quot;;
                 } else {
-                    badge.style.display = "none";
+                    badge.style.display = &quot;none&quot;;
                 }
             }
             
-            // ================= ALERT & EXPORT ENGINE =================
+            // ================= ALERT &amp; EXPORT ENGINE =================
             function triggerIOSAlert(title, desc, isTextarea, initialVal, config) {
-                document.getElementById("iosAlertTitle").innerText = title;
-                document.getElementById("iosAlertDesc").innerText = desc;
-                const textField = document.getElementById("iosAlertTextField");
-                const copyBtn = document.getElementById("copyTextBtn");
+                document.getElementById(&quot;iosAlertTitle&quot;).innerText = title;
+                document.getElementById(&quot;iosAlertDesc&quot;).innerText = desc;
+                const textField = document.getElementById(&quot;iosAlertTextField&quot;);
+                const copyBtn = document.getElementById(&quot;copyTextBtn&quot;);
                 
                 if(isTextarea) { 
-                    textField.style.display = "block"; textField.value = initialVal || ""; 
-                    if(initialVal) { copyBtn.style.display = "block"; copyBtn.innerText = "📋 Copy to Clipboard"; } else { copyBtn.style.display = "none"; }
+                    textField.style.display = &quot;block&quot;; textField.value = initialVal || &quot;&quot;; 
+                    if(initialVal) { copyBtn.style.display = &quot;block&quot;; copyBtn.innerText = &quot;📋 Copy to Clipboard&quot;; } else { copyBtn.style.display = &quot;none&quot;; }
                 } else { 
-                    textField.style.display = "none"; copyBtn.style.display = "none";
+                    textField.style.display = &quot;none&quot;; copyBtn.style.display = &quot;none&quot;;
                 }
                 
-                const buttonDock = document.getElementById("iosAlertButtonDock"); buttonDock.innerHTML = "";
-                if(config.stacked) buttonDock.classList.add("stacked"); else buttonDock.classList.remove("stacked");
+                const buttonDock = document.getElementById(&quot;iosAlertButtonDock&quot;); buttonDock.innerHTML = &quot;&quot;;
+                if(config.stacked) buttonDock.classList.add(&quot;stacked&quot;); else buttonDock.classList.remove(&quot;stacked&quot;);
                 
-                config.buttons.forEach(btn => {
-                    const b = document.createElement("button"); b.className = `ios-alert-btn ${btn.styleClass || ""}`; b.innerText = btn.text;
-                    b.onclick = () => { if(btn.autoClose !== false) document.getElementById("iosSystemAlertModal").classList.remove("active"); if(btn.action) btn.action(isTextarea ? textField.value : null); };
+                config.buttons.forEach(btn =&gt; {
+                    const b = document.createElement(&quot;button&quot;); b.className = `ios-alert-btn ${btn.styleClass || &quot;&quot;}`; b.innerText = btn.text;
+                    b.onclick = () =&gt; { if(btn.autoClose !== false) document.getElementById(&quot;iosSystemAlertModal&quot;).classList.remove(&quot;active&quot;); if(btn.action) btn.action(isTextarea ? textField.value : null); };
                     buttonDock.appendChild(b);
                 });
-                document.getElementById("iosSystemAlertModal").classList.add("active");
+                document.getElementById(&quot;iosSystemAlertModal&quot;).classList.add(&quot;active&quot;);
             }
             
             function copyBackupText() {
-                let txt = document.getElementById("iosAlertTextField");
-                txt.select(); document.execCommand("copy");
-                document.getElementById("copyTextBtn").innerText = "✅ Copied Successfully!";
+                let txt = document.getElementById(&quot;iosAlertTextField&quot;);
+                txt.select(); document.execCommand(&quot;copy&quot;);
+                document.getElementById(&quot;copyTextBtn&quot;).innerText = &quot;✅ Copied Successfully!&quot;;
             }
             
             function triggerBackupExport() {
                 let dataStr = JSON.stringify(treeData, null, 2);
-                const blob = new Blob([dataStr], {type: "application/json"});
+                const blob = new Blob([dataStr], {type: &quot;application/json&quot;});
                 const url = URL.createObjectURL(blob);
-                const a = document.createElement("a");
+                const a = document.createElement(&quot;a&quot;);
                 a.href = url;
                 const d = new Date();
-                const stamp = d.toISOString().slice(0,10) + "_" + String(d.getHours()).padStart(2,'0') + String(d.getMinutes()).padStart(2,'0');
-                a.download = "Kagazi_Backup_" + stamp + ".json";
+                const stamp = d.toISOString().slice(0,10) + &quot;_&quot; + String(d.getHours()).padStart(2,'0') + String(d.getMinutes()).padStart(2,'0');
+                a.download = &quot;Kagazi_Backup_&quot; + stamp + &quot;.json&quot;;
                 document.body.appendChild(a);
                 a.click();
                 a.remove();
                 URL.revokeObjectURL(url);
                 
-                triggerIOSAlert("Backup Saved", "Your data has been downloaded as a .json file. You can also copy the text below:", true, dataStr, { 
-                    buttons: [ { text: "Close", styleClass: "btn-cancel" } ], stacked: true 
+                triggerIOSAlert(&quot;Backup Saved&quot;, &quot;Your data has been downloaded as a .json file. You can also copy the text below:&quot;, true, dataStr, { 
+                    buttons: [ { text: &quot;Close&quot;, styleClass: &quot;btn-cancel&quot; } ], stacked: true 
                 });
             }
             
             function triggerBackupImport() {
-                document.getElementById("jsonImportInput").click();
+                document.getElementById(&quot;jsonImportInput&quot;).click();
             }
             
-            document.getElementById("jsonImportInput").onchange = function(e) {
+            document.getElementById(&quot;jsonImportInput&quot;).onchange = function(e) {
                 const file = e.target.files[0];
                 if (!file) return;
                 const reader = new FileReader();
@@ -482,20 +594,20 @@ Right index.HTML
                             saveData();
                             populateExamSelect();
                             toggleSettingsDrawer(false);
-                            if (activeView === "syllabus") renderSyllabusListView();
+                            if (activeView === &quot;syllabus&quot;) renderSyllabusListView();
                             else { renderMindMapCanvas(); centerMindMap(); }
-                            triggerIOSAlert("Restore Successful ✅", "Aapka data restore ho gaya!", false, null, {
-                                buttons: [{ text: "OK", styleClass: "btn-accent" }], stacked: true
+                            triggerIOSAlert(&quot;Restore Successful ✅&quot;, &quot;Aapka data restore ho gaya!&quot;, false, null, {
+                                buttons: [{ text: &quot;OK&quot;, styleClass: &quot;btn-accent&quot; }], stacked: true
                             });
                         } else {
-                            alert("Invalid format — Array expected.");
+                            alert(&quot;Invalid format — Array expected.&quot;);
                         }
                     } catch(err) {
-                        alert("Invalid JSON file.");
+                        alert(&quot;Invalid JSON file.&quot;);
                     }
                 };
                 reader.readAsText(file);
-                e.target.value = "";
+                e.target.value = &quot;&quot;;
             };
             
             // ================= GESTURES (100% HOLD FIX) =================
@@ -505,61 +617,61 @@ Right index.HTML
                 const HOLD_DELAY = 600;
                 const MOVE_THRESHOLD = 12;
                 
-                const executeDoubleTap = () => { 
-                    if(globalNavLock) return; globalNavLock = true; setTimeout(()=> globalNavLock = false, 500); 
-                    if(node.type === "Quiz") launchRealQuiz(node); 
+                const executeDoubleTap = () =&gt; { 
+                    if(globalNavLock) return; globalNavLock = true; setTimeout(()=&gt; globalNavLock = false, 500); 
+                    if(node.type === &quot;Quiz&quot;) launchRealQuiz(node); 
                     else if(isMap) { node.isExpanded = !node.isExpanded; renderMindMapCanvas(); } 
                     else { currentPath.push(node.id); renderSyllabusListView(); } 
                 };
                 
-                const triggerActionMenu = () => {
+                const triggerActionMenu = () =&gt; {
                     menuOpened = true;
                     let buttons = [
-                    { text: "✏️ Rename", action: () => { openMutationModal(`Rename '${node.name}'`, node.name, (val) => { node.name = val; saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }); } },
-                    { text: "❌ Delete", styleClass: "btn-destructive", action: () => { 
-                        triggerIOSAlert("Confirm Delete", `Are you sure you want to permanently delete '${node.name}'?`, false, null, { buttons: [ {text: "Delete", styleClass: "btn-destructive", action: ()=>{ deleteNodeFromDatabase(treeData, node.id); saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }}, {text: "Cancel", styleClass: "btn-cancel"} ], stacked: true});
+                    { text: &quot;✏️ Rename&quot;, action: () =&gt; { openMutationModal(`Rename '${node.name}'`, node.name, (val) =&gt; { node.name = val; saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }); } },
+                    { text: &quot;❌ Delete&quot;, styleClass: &quot;btn-destructive&quot;, action: () =&gt; { 
+                        triggerIOSAlert(&quot;Confirm Delete&quot;, `Are you sure you want to permanently delete '${node.name}'?`, false, null, { buttons: [ {text: &quot;Delete&quot;, styleClass: &quot;btn-destructive&quot;, action: ()=&gt;{ deleteNodeFromDatabase(treeData, node.id); saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }}, {text: &quot;Cancel&quot;, styleClass: &quot;btn-cancel&quot;} ], stacked: true});
                     }}
                     ];
-                    if(node.type !== "Quiz") {
-                        buttons.unshift({ text: "➕ Add Sub-Item", action: () => { 
-                            let nextType = node.type === "Exam" ? "Subject" : node.type === "Subject" ? "Topic" : "Quiz";
-                            if(nextType === "Quiz") { window.tempImportParent = node; document.getElementById("quizImportInput").click(); }
-                            else { openMutationModal(`Add New ${nextType}`, "", (val) => { if(!node.children) node.children = []; node.children.push({id: "node-"+Date.now(), name: val, type: nextType, isExpanded: true, children:[]}); node.isExpanded = true; saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }); }
+                    if(node.type !== &quot;Quiz&quot;) {
+                        buttons.unshift({ text: &quot;➕ Add Sub-Item&quot;, action: () =&gt; { 
+                            let nextType = node.type === &quot;Exam&quot; ? &quot;Subject&quot; : node.type === &quot;Subject&quot; ? &quot;Topic&quot; : &quot;Quiz&quot;;
+                            if(nextType === &quot;Quiz&quot;) { window.tempImportParent = node; document.getElementById(&quot;quizImportInput&quot;).click(); }
+                            else { openMutationModal(`Add New ${nextType}`, &quot;&quot;, (val) =&gt; { if(!node.children) node.children = []; node.children.push({id: &quot;node-&quot;+Date.now(), name: val, type: nextType, isExpanded: true, children:[]}); node.isExpanded = true; saveData(); isMap ? renderMindMapCanvas() : renderSyllabusListView(); }); }
                         }});
                     }
-                    buttons.push({ text: "Cancel", styleClass: "btn-cancel" });
-                    triggerIOSAlert(`Manage '${node.name}'`, "Select an action below:", false, null, { buttons: buttons, stacked: true });
+                    buttons.push({ text: &quot;Cancel&quot;, styleClass: &quot;btn-cancel&quot; });
+                    triggerIOSAlert(`Manage '${node.name}'`, &quot;Select an action below:&quot;, false, null, { buttons: buttons, stacked: true });
                 };
                 
                 element.style.touchAction = 'none';
-                element.addEventListener('contextmenu', e => { e.preventDefault(); triggerActionMenu(); });
+                element.addEventListener('contextmenu', e =&gt; { e.preventDefault(); triggerActionMenu(); });
                 
-                element.addEventListener('touchstart', (e) => {
-                    if (e.touches.length > 1) return;
+                element.addEventListener('touchstart', (e) =&gt; {
+                    if (e.touches.length &gt; 1) return;
                     menuOpened = false;
                     touchMoved = false;
                     touchStartX = e.touches[0].clientX;
                     touchStartY = e.touches[0].clientY;
-                    holdTimer = setTimeout(() => {
+                    holdTimer = setTimeout(() =&gt; {
                         if (!touchMoved) triggerActionMenu();
                     }, HOLD_DELAY);
                 }, {passive: true});
                 
-                element.addEventListener('touchmove', (e) => {
-                    if (e.touches.length > 1 || menuOpened) { touchMoved = true; clearTimeout(holdTimer); return; }
+                element.addEventListener('touchmove', (e) =&gt; {
+                    if (e.touches.length &gt; 1 || menuOpened) { touchMoved = true; clearTimeout(holdTimer); return; }
                     const dx = Math.abs(e.touches[0].clientX - touchStartX);
                     const dy = Math.abs(e.touches[0].clientY - touchStartY);
-                    if (dx > MOVE_THRESHOLD || dy > MOVE_THRESHOLD) {
+                    if (dx &gt; MOVE_THRESHOLD || dy &gt; MOVE_THRESHOLD) {
                         touchMoved = true;
                         clearTimeout(holdTimer);
                     }
                 }, {passive: true});
                 
-                element.addEventListener('touchend', (e) => {
+                element.addEventListener('touchend', (e) =&gt; {
                     clearTimeout(holdTimer);
-                    if (!touchMoved && !menuOpened) {
+                    if (!touchMoved &amp;&amp; !menuOpened) {
                         let now = Date.now();
-                        if (now - lastTap < 300) {
+                        if (now - lastTap &lt; 300) {
                             executeDoubleTap();
                             lastTap = 0;
                         } else {
@@ -568,69 +680,69 @@ Right index.HTML
                     }
                 });
                 
-                element.addEventListener('mousedown', (e) => {
+                element.addEventListener('mousedown', (e) =&gt; {
                     if (e.button !== 0) return;
                     menuOpened = false;
                     holdTimer = setTimeout(triggerActionMenu, HOLD_DELAY);
                 });
-                element.addEventListener('mouseup', () => clearTimeout(holdTimer));
-                element.addEventListener('mouseleave', () => clearTimeout(holdTimer));
-                element.addEventListener('dblclick', (e) => { e.preventDefault(); executeDoubleTap(); });
+                element.addEventListener('mouseup', () =&gt; clearTimeout(holdTimer));
+                element.addEventListener('mouseleave', () =&gt; clearTimeout(holdTimer));
+                element.addEventListener('dblclick', (e) =&gt; { e.preventDefault(); executeDoubleTap(); });
             }
             
             function getCurrentLevelNodes() {
                 if (currentPath.length === 0) return treeData; let currentLevel = treeData;
-                for (let id of currentPath) { let found = currentLevel.find(n => n.id === id); if (found && found.children) currentLevel = found.children; else return []; }
+                for (let id of currentPath) { let found = currentLevel.find(n =&gt; n.id === id); if (found &amp;&amp; found.children) currentLevel = found.children; else return []; }
                 return currentLevel;
             }
-            function getNextExpectedLevelType() { if (currentPath.length === 0) return "Exam"; if (currentPath.length === 1) return "Subject"; if (currentPath.length === 2) return "Topic"; return "Quiz"; }
+            function getNextExpectedLevelType() { if (currentPath.length === 0) return &quot;Exam&quot;; if (currentPath.length === 1) return &quot;Subject&quot;; if (currentPath.length === 2) return &quot;Topic&quot;; return &quot;Quiz&quot;; }
             
             // ================= SYLLABUS LIST =================
             function renderSyllabusListView() {
-                syllabusListWrapper.innerHTML = ""; renderBreadcrumbs(); const nodes = getCurrentLevelNodes(); const nextType = getNextExpectedLevelType();
-                addLevelLabel.innerText = nextType; addNodeBtn.style.display = currentPath.length >= 4 ? "none" : "block";
+                syllabusListWrapper.innerHTML = &quot;&quot;; renderBreadcrumbs(); const nodes = getCurrentLevelNodes(); const nextType = getNextExpectedLevelType();
+                addLevelLabel.innerText = nextType; addNodeBtn.style.display = currentPath.length &gt;= 4 ? &quot;none&quot; : &quot;block&quot;;
                 
-                if (nodes.length === 0) { syllabusListWrapper.innerHTML = `<div class="syllabus-row-card" style="justify-content:center; color:gray; font-size:15px; pointer-events:none;">Folder is empty. Click 'Add New' below.</div>`; return; }
+                if (nodes.length === 0) { syllabusListWrapper.innerHTML = `&lt;div class=&quot;syllabus-row-card&quot; style=&quot;justify-content:center; color:gray; font-size:15px; pointer-events:none;&quot;&gt;Folder is empty. Click 'Add New' below.&lt;/div&gt;`; return; }
                 
-                nodes.forEach(node => {
-                    const isQuiz = node.type === "Quiz"; let status = node.status || "Pending";
-                    let subText = "";
+                nodes.forEach(node =&gt; {
+                    const isQuiz = node.type === &quot;Quiz&quot;; let status = node.status || &quot;Pending&quot;;
+                    let subText = &quot;&quot;;
                     if (isQuiz) {
-                        if (status === "Quitted") subText = "⏳ Quitted / Unfinished";
-                        else if (status === "Attempted") {
+                        if (status === &quot;Quitted&quot;) subText = &quot;⏳ Quitted / Unfinished&quot;;
+                        else if (status === &quot;Attempted&quot;) {
                             let attemptsStr = node.attempts ? node.attempts.join(', ') : (node.score || '-');
-                            let highestStr = node.highestPct ? `<span class="fire-text">🔥 Highest: ${node.highestPct.toFixed(1)}% (${node.highestScore})</span>` : `✅ Score: ${node.score}`;
-                            subText = `${highestStr}<br><span style="font-size:13px; color:var(--text-muted); display:inline-block; margin-top:4px;">Last 5: [${attemptsStr}]</span>`;
-                        } else subText = "⏳ Pending";
+                            let highestStr = node.highestPct ? `&lt;span class=&quot;fire-text&quot;&gt;🔥 Highest: ${node.highestPct.toFixed(1)}% (${node.highestScore})&lt;/span&gt;` : `✅ Score: ${node.score}`;
+                            subText = `${highestStr}&lt;br&gt;&lt;span style=&quot;font-size:13px; color:var(--text-muted); display:inline-block; margin-top:4px;&quot;&gt;Last 5: [${attemptsStr}]&lt;/span&gt;`;
+                        } else subText = &quot;⏳ Pending&quot;;
                     } else { subText = 'Double-tap to open ➔ ' + (node.children ? node.children.length : 0) + ' items'; }
                     
-                    const card = document.createElement("div"); 
+                    const card = document.createElement(&quot;div&quot;); 
                     card.className = `syllabus-row-card type-${node.type.toLowerCase()} ${isQuiz ? 'status-'+status.toLowerCase() : ''}`;
-                    card.innerHTML = `<div class="row-left-section"><div class="row-icon-box">${node.type[0]}</div><div class="row-text-block"><h4>${node.name}</h4><p>${subText}</p></div></div>`;
+                    card.innerHTML = `&lt;div class=&quot;row-left-section&quot;&gt;&lt;div class=&quot;row-icon-box&quot;&gt;${node.type[0]}&lt;/div&gt;&lt;div class=&quot;row-text-block&quot;&gt;&lt;h4&gt;${node.name}&lt;/h4&gt;&lt;p&gt;${subText}&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;`;
                     attachGestures(card, node, false); syllabusListWrapper.appendChild(card);
                 });
             }
             
             function navigateBreadcrumb(index) { currentPath = index === -1 ? [] : currentPath.slice(0, index + 1); renderSyllabusListView(); }
             function renderBreadcrumbs() {
-                breadcrumbs.innerHTML = `<span class="crumb-step" onclick="navigateBreadcrumb(-1)">All Exams</span>`; let activeTrace = [];
-                currentPath.forEach((id, idx) => {
+                breadcrumbs.innerHTML = `&lt;span class=&quot;crumb-step&quot; onclick=&quot;navigateBreadcrumb(-1)&quot;&gt;All Exams&lt;/span&gt;`; let activeTrace = [];
+                currentPath.forEach((id, idx) =&gt; {
                     activeTrace.push(id); let currentLevel = treeData; let foundNode = null;
-                    for (let targetId of activeTrace) { foundNode = currentLevel.find(n => n.id === targetId); if (foundNode && foundNode.children) currentLevel = foundNode.children; }
-                    if (foundNode) breadcrumbs.innerHTML += `<span class="crumb-step" onclick="navigateBreadcrumb(${idx})">${foundNode.name}</span>`;
+                    for (let targetId of activeTrace) { foundNode = currentLevel.find(n =&gt; n.id === targetId); if (foundNode &amp;&amp; foundNode.children) currentLevel = foundNode.children; }
+                    if (foundNode) breadcrumbs.innerHTML += `&lt;span class=&quot;crumb-step&quot; onclick=&quot;navigateBreadcrumb(${idx})&quot;&gt;${foundNode.name}&lt;/span&gt;`;
                 });
             }
             
             // ================= CREATION =================
-            addNodeBtn.onclick = () => {
+            addNodeBtn.onclick = () =&gt; {
                 const nextType = getNextExpectedLevelType();
-                if (nextType === "Quiz") { window.tempImportParent = null; document.getElementById("quizImportInput").click(); } 
+                if (nextType === &quot;Quiz&quot;) { window.tempImportParent = null; document.getElementById(&quot;quizImportInput&quot;).click(); } 
                 else {
-                    openMutationModal(`Create New ${nextType}`, "", (val) => {
-                        const newNode = { id: "node-" + Date.now(), name: val, type: nextType, isExpanded: true, children: [] };
+                    openMutationModal(`Create New ${nextType}`, &quot;&quot;, (val) =&gt; {
+                        const newNode = { id: &quot;node-&quot; + Date.now(), name: val, type: nextType, isExpanded: true, children: [] };
                         if (currentPath.length === 0) treeData.push(newNode); else {
                             let currentLevel = treeData; let parentNode = null;
-                            for (let id of currentPath) { parentNode = currentLevel.find(n => n.id === id); if (parentNode && parentNode.children) currentLevel = parentNode.children; }
+                            for (let id of currentPath) { parentNode = currentLevel.find(n =&gt; n.id === id); if (parentNode &amp;&amp; parentNode.children) currentLevel = parentNode.children; }
                             if (parentNode) { parentNode.children.push(newNode); parentNode.isExpanded = true; }
                         }
                         saveData(); renderSyllabusListView();
@@ -638,32 +750,32 @@ Right index.HTML
                 }
             };
             
-            document.getElementById("quizImportInput").onchange = (e) => {
+            document.getElementById(&quot;quizImportInput&quot;).onchange = (e) =&gt; {
                 const file = e.target.files[0]; 
-                if (!file) { window.tempImportParent = null; e.target.value = ""; return; }
-                let quizName = file.name.replace(/\.html$|\.htm$/i, ""); 
+                if (!file) { window.tempImportParent = null; e.target.value = &quot;&quot;; return; }
+                let quizName = file.name.replace(/\.html$|\.htm$/i, &quot;&quot;); 
                 const reader = new FileReader();
-                reader.onload = (evt) => {
+                reader.onload = (evt) =&gt; {
                     let htmlCode = evt.target.result;
-                    const newNode = { id: "node-" + Date.now(), name: quizName, type: "Quiz", status: "Pending", score: "-", attempts: [], highestPct: 0, highestScore: "-", quizHTML: htmlCode };
+                    const newNode = { id: &quot;node-&quot; + Date.now(), name: quizName, type: &quot;Quiz&quot;, status: &quot;Pending&quot;, score: &quot;-&quot;, attempts: [], highestPct: 0, highestScore: &quot;-&quot;, quizHTML: htmlCode };
                     if (window.tempImportParent) {
                         if (!window.tempImportParent.children) window.tempImportParent.children = [];
                         window.tempImportParent.children.push(newNode); window.tempImportParent.isExpanded = true; window.tempImportParent = null; 
                     } else {
                         let currentLevel = treeData; let parentNode = null;
-                        for (let id of currentPath) { parentNode = currentLevel.find(n => n.id === id); if (parentNode && parentNode.children) currentLevel = parentNode.children; }
+                        for (let id of currentPath) { parentNode = currentLevel.find(n =&gt; n.id === id); if (parentNode &amp;&amp; parentNode.children) currentLevel = parentNode.children; }
                         if (parentNode) { if (!parentNode.children) parentNode.children = []; parentNode.children.push(newNode); parentNode.isExpanded = true; }
                     }
-                    saveData(); if(activeView === "syllabus") renderSyllabusListView(); else renderMindMapCanvas();
+                    saveData(); if(activeView === &quot;syllabus&quot;) renderSyllabusListView(); else renderMindMapCanvas();
                 };
-                reader.readAsText(file); e.target.value = ""; 
+                reader.readAsText(file); e.target.value = &quot;&quot;; 
             };
             
-            // ================= QUIZ FRAME & SCORING =================
+            // ================= QUIZ FRAME &amp; SCORING =================
             function launchRealQuiz(quizNode) {
                 activeQuizNodeForScoring = quizNode;
                 if(quizNode.quizHTML) {
-                    const antiFreezeScript = `<script>
+                    const antiFreezeScript = `&lt;script&gt;
 (function(){
     // iOS freeze protection
     window.alert  = function(msg){ console.log('[quiz]', msg); };
@@ -680,7 +792,7 @@ Right index.HTML
 
     // Custom confirm dialog - pure DOM, sandboxed iframe safe
     function showKagaziConfirm(message, onYes) {
-        var lines = message.split('\n').filter(function(l){ return l.trim(); });
+        var lines = message.split('\\n').filter(function(l){ return l.trim(); });
         var title = lines[0] || 'Submit Quiz?';
         var sub   = lines.slice(1).join(' ').trim();
 
@@ -689,13 +801,13 @@ Right index.HTML
         ov.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:2147483647;display:flex;align-items:center;justify-content:center;font-family:-apple-system,sans-serif;';
 
         ov.innerHTML =
-            '<div style="background:#fff;border-radius:20px;padding:28px 22px;max-width:300px;width:88%;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.4);">' +
-            '<div style="font-size:19px;font-weight:800;color:#4f46e5;margin-bottom:10px;">' + title + '</div>' +
-            (sub ? '<div style="font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:18px;">&#9888;&#65039; ' + sub + '</div>' : '<div style="margin-bottom:12px;"></div>') +
-            '<div style="display:flex;gap:10px;">' +
-            '<button id="__kz_no"  style="flex:1;padding:14px;border-radius:12px;border:2px solid #cbd5e1;background:#fff;font-size:15px;font-weight:700;cursor:pointer;color:#0f172a;">Cancel</button>' +
-            '<button id="__kz_yes" style="flex:1;padding:14px;border-radius:12px;border:none;background:#4f46e5;color:#fff;font-size:15px;font-weight:800;cursor:pointer;">Submit &#10003;</button>' +
-            '</div></div>';
+            '&lt;div style=\&quot;background:#fff;border-radius:20px;padding:28px 22px;max-width:300px;width:88%;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,0.4);\&quot;&gt;' +
+            '&lt;div style=\&quot;font-size:19px;font-weight:800;color:#4f46e5;margin-bottom:10px;\&quot;&gt;' + title + '&lt;/div&gt;' +
+            (sub ? '&lt;div style=\&quot;font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:18px;\&quot;&gt;&amp;#9888;&amp;#65039; ' + sub + '&lt;/div&gt;' : '&lt;div style=\&quot;margin-bottom:12px;\&quot;&gt;&lt;/div&gt;') +
+            '&lt;div style=\&quot;display:flex;gap:10px;\&quot;&gt;' +
+            '&lt;button id=\&quot;__kz_no\&quot;  style=\&quot;flex:1;padding:14px;border-radius:12px;border:2px solid #cbd5e1;background:#fff;font-size:15px;font-weight:700;cursor:pointer;color:#0f172a;\&quot;&gt;Cancel&lt;/button&gt;' +
+            '&lt;button id=\&quot;__kz_yes\&quot; style=\&quot;flex:1;padding:14px;border-radius:12px;border:none;background:#4f46e5;color:#fff;font-size:15px;font-weight:800;cursor:pointer;\&quot;&gt;Submit &amp;#10003;&lt;/button&gt;' +
+            '&lt;/div&gt;&lt;/div&gt;';
 
         document.body.appendChild(ov);
 
@@ -726,14 +838,14 @@ Right index.HTML
 
             var unattempted = 0;
             try {
-                if (typeof questions !== 'undefined' && typeof answers !== 'undefined') {
+                if (typeof questions !== 'undefined' &amp;&amp; typeof answers !== 'undefined') {
                     unattempted = questions.length - Object.keys(answers).length;
                 }
             } catch(e){}
 
             var msg = 'Are you sure you want to submit the quiz?';
-            if (unattempted > 0) {
-                msg += '\n\nYou have ' + unattempted + ' unanswered question(s).';
+            if (unattempted &gt; 0) {
+                msg += '\\n\\nYou have ' + unattempted + ' unanswered question(s).';
             }
 
             showKagaziConfirm(msg, function(){
@@ -745,18 +857,18 @@ Right index.HTML
         newBtn.addEventListener('touchend', function(e){ e.preventDefault(); handleSubmit(); });
     });
 })();
-<\/script>`;
-                    document.getElementById("quizIframe").srcdoc = antiFreezeScript + quizNode.quizHTML;
-                    document.getElementById("activeQuizTitle").innerText = quizNode.name;
-                    document.getElementById("fullQuizFrameOverlay").style.display = "flex";
+&lt;\/script&gt;`;
+                    document.getElementById(&quot;quizIframe&quot;).srcdoc = antiFreezeScript + quizNode.quizHTML;
+                    document.getElementById(&quot;activeQuizTitle&quot;).innerText = quizNode.name;
+                    document.getElementById(&quot;fullQuizFrameOverlay&quot;).style.display = &quot;flex&quot;;
                 }
             }
             
             function confirmQuizQuit() {
-                triggerIOSAlert("Quit Quiz?", "Are you sure you want to quit without saving a score?", false, null, {
+                triggerIOSAlert(&quot;Quit Quiz?&quot;, &quot;Are you sure you want to quit without saving a score?&quot;, false, null, {
                     buttons: [
-                    { text: "Quit", styleClass: "btn-destructive", action: () => { quitFromScoreModal(); } },
-                    { text: "Cancel", styleClass: "btn-cancel" }
+                    { text: &quot;Quit&quot;, styleClass: &quot;btn-destructive&quot;, action: () =&gt; { quitFromScoreModal(); } },
+                    { text: &quot;Cancel&quot;, styleClass: &quot;btn-cancel&quot; }
                     ], stacked: true
                 });
             }
@@ -766,27 +878,27 @@ Right index.HTML
                 if (preFilledScore) {
                     numpadValue = preFilledScore;
                 } else {
-                    numpadValue = activeQuizNodeForScoring.score !== "-" && activeQuizNodeForScoring.score !== "Pending" ? activeQuizNodeForScoring.score : "";
+                    numpadValue = activeQuizNodeForScoring.score !== &quot;-&quot; &amp;&amp; activeQuizNodeForScoring.score !== &quot;Pending&quot; ? activeQuizNodeForScoring.score : &quot;&quot;;
                 }
-                document.getElementById("scoreModalTitle").innerText = `Log Score: ${activeQuizNodeForScoring.name}`;
+                document.getElementById(&quot;scoreModalTitle&quot;).innerText = `Log Score: ${activeQuizNodeForScoring.name}`;
                 updateNumpadDisplay();
-                document.getElementById("scoreEntryModal").classList.add("active");
+                document.getElementById(&quot;scoreEntryModal&quot;).classList.add(&quot;active&quot;);
             }
             
             function closeScoreModal() {
-                document.getElementById("scoreEntryModal").classList.remove("active");
+                document.getElementById(&quot;scoreEntryModal&quot;).classList.remove(&quot;active&quot;);
             }
             
             function updateNumpadDisplay() {
-                document.getElementById("numpadDisplay").innerText = numpadValue || "-- / --";
+                document.getElementById(&quot;numpadDisplay&quot;).innerText = numpadValue || &quot;-- / --&quot;;
             }
             
             function pressNumpad(key) {
                 if (key === 'backspace') {
                     numpadValue = numpadValue.slice(0, -1);
                 } else {
-                    if (key === '/' && numpadValue.includes('/')) return;
-                    if (numpadValue.length >= 10) return;
+                    if (key === '/' &amp;&amp; numpadValue.includes('/')) return;
+                    if (numpadValue.length &gt;= 10) return;
                     numpadValue += key;
                 }
                 updateNumpadDisplay();
@@ -799,106 +911,106 @@ Right index.HTML
                 
                 let parts = val.split('/');
                 if (parts.length !== 2 || isNaN(parseFloat(parts[0])) || isNaN(parseFloat(parts[1])) || parseFloat(parts[1]) === 0) {
-                    triggerIOSAlert("Invalid Score", "Please enter score in format: 45/50", false, null, { buttons: [{text: "OK", styleClass: "btn-accent"}], stacked: true });
+                    triggerIOSAlert(&quot;Invalid Score&quot;, &quot;Please enter score in format: 45/50&quot;, false, null, { buttons: [{text: &quot;OK&quot;, styleClass: &quot;btn-accent&quot;}], stacked: true });
                     return;
                 }
                 
                 let pct = (parseFloat(parts[0]) / parseFloat(parts[1])) * 100;
-                if (!activeQuizNodeForScoring.highestPct || pct >= activeQuizNodeForScoring.highestPct) {
+                if (!activeQuizNodeForScoring.highestPct || pct &gt;= activeQuizNodeForScoring.highestPct) {
                     activeQuizNodeForScoring.highestPct = pct;
                     activeQuizNodeForScoring.highestScore = val;
                 }
                 if (!activeQuizNodeForScoring.attempts) activeQuizNodeForScoring.attempts = [];
                 activeQuizNodeForScoring.attempts.push(val);
-                if (activeQuizNodeForScoring.attempts.length > 5) activeQuizNodeForScoring.attempts.shift();
+                if (activeQuizNodeForScoring.attempts.length &gt; 5) activeQuizNodeForScoring.attempts.shift();
                 
-                activeQuizNodeForScoring.status = "Attempted";
+                activeQuizNodeForScoring.status = &quot;Attempted&quot;;
                 activeQuizNodeForScoring.score = val;
                 
                 saveData();
-                document.getElementById("fullQuizFrameOverlay").style.display = "none";
-                document.getElementById("quizIframe").srcdoc = "";
+                document.getElementById(&quot;fullQuizFrameOverlay&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;quizIframe&quot;).srcdoc = &quot;&quot;;
                 activeQuizNodeForScoring = null;
                 closeScoreModal();
-                if (activeView === "syllabus") renderSyllabusListView(); else renderMindMapCanvas();
+                if (activeView === &quot;syllabus&quot;) renderSyllabusListView(); else renderMindMapCanvas();
             }
             
             function quitFromScoreModal() {
                 if (!activeQuizNodeForScoring) return;
-                activeQuizNodeForScoring.status = "Quitted";
-                activeQuizNodeForScoring.score = "-";
+                activeQuizNodeForScoring.status = &quot;Quitted&quot;;
+                activeQuizNodeForScoring.score = &quot;-&quot;;
                 saveData();
-                document.getElementById("fullQuizFrameOverlay").style.display = "none";
-                document.getElementById("quizIframe").srcdoc = "";
+                document.getElementById(&quot;fullQuizFrameOverlay&quot;).style.display = &quot;none&quot;;
+                document.getElementById(&quot;quizIframe&quot;).srcdoc = &quot;&quot;;
                 activeQuizNodeForScoring = null;
                 closeScoreModal();
-                if (activeView === "syllabus") renderSyllabusListView(); else renderMindMapCanvas();
+                if (activeView === &quot;syllabus&quot;) renderSyllabusListView(); else renderMindMapCanvas();
             }
             
             // ================= MIND MAP =================
             const MAP_GAP_X = 500; const MAP_GAP_Y = 120;
             
             function populateExamSelect() {
-                mapExamSelect.innerHTML = ""; if(treeData.length === 0) { mapExamSelect.innerHTML = "<option>No Exams</option>"; return; }
-                treeData.forEach(exam => { let opt = document.createElement("option"); opt.value = exam.id; opt.innerText = exam.name; mapExamSelect.appendChild(opt); });
-                if(selectedMapExamId && treeData.find(e => e.id === selectedMapExamId)) { mapExamSelect.value = selectedMapExamId; }
+                mapExamSelect.innerHTML = &quot;&quot;; if(treeData.length === 0) { mapExamSelect.innerHTML = &quot;&lt;option&gt;No Exams&lt;/option&gt;&quot;; return; }
+                treeData.forEach(exam =&gt; { let opt = document.createElement(&quot;option&quot;); opt.value = exam.id; opt.innerText = exam.name; mapExamSelect.appendChild(opt); });
+                if(selectedMapExamId &amp;&amp; treeData.find(e =&gt; e.id === selectedMapExamId)) { mapExamSelect.value = selectedMapExamId; }
                 else { selectedMapExamId = treeData[0].id; mapExamSelect.value = selectedMapExamId; localStorage.setItem('kagazi_last_exam', selectedMapExamId); }
             }
-            mapExamSelect.onchange = (e) => { selectedMapExamId = e.target.value; localStorage.setItem('kagazi_last_exam', selectedMapExamId); renderMindMapCanvas(); centerMindMap(); };
+            mapExamSelect.onchange = (e) =&gt; { selectedMapExamId = e.target.value; localStorage.setItem('kagazi_last_exam', selectedMapExamId); renderMindMapCanvas(); centerMindMap(); };
             
             function renderMindMapCanvas() {
-                mapNodesLayer.innerHTML = ""; svgTraceLayer.innerHTML = ""; if (treeData.length === 0) return;
-                let rootNode = treeData.find(e => e.id === selectedMapExamId) || treeData[0];
+                mapNodesLayer.innerHTML = &quot;&quot;; svgTraceLayer.innerHTML = &quot;&quot;; if (treeData.length === 0) return;
+                let rootNode = treeData.find(e =&gt; e.id === selectedMapExamId) || treeData[0];
                 const positionsRegistry = {}; const centerX = 5000, centerY = 5000;
-                if (currentLayout === "radial") {
-                    positionsRegistry[rootNode.id] = { x: centerX, y: centerY, direction: "center" }; compileDomNodeBoxCard(rootNode, centerX, centerY, "center", positionsRegistry);
+                if (currentLayout === &quot;radial&quot;) {
+                    positionsRegistry[rootNode.id] = { x: centerX, y: centerY, direction: &quot;center&quot; }; compileDomNodeBoxCard(rootNode, centerX, centerY, &quot;center&quot;, positionsRegistry);
                     const branches = rootNode.children || [];
-                    if (rootNode.isExpanded && branches.length > 0) { const midpoint = Math.ceil(branches.length / 2); calculateBranchCoordinateStack(branches.slice(0, midpoint), centerX - MAP_GAP_X, centerY, "left", positionsRegistry); calculateBranchCoordinateStack(branches.slice(midpoint), centerX + MAP_GAP_X, centerY, "right", positionsRegistry); }
+                    if (rootNode.isExpanded &amp;&amp; branches.length &gt; 0) { const midpoint = Math.ceil(branches.length / 2); calculateBranchCoordinateStack(branches.slice(0, midpoint), centerX - MAP_GAP_X, centerY, &quot;left&quot;, positionsRegistry); calculateBranchCoordinateStack(branches.slice(midpoint), centerX + MAP_GAP_X, centerY, &quot;right&quot;, positionsRegistry); }
                 } else {
-                    positionsRegistry[rootNode.id] = { x: centerX - 800, y: centerY, direction: "right" }; compileDomNodeBoxCard(rootNode, centerX - 800, centerY, "right", positionsRegistry);
-                    if (rootNode.isExpanded && rootNode.children) calculateBranchCoordinateStack(rootNode.children, centerX - 800 + MAP_GAP_X, centerY, "right", positionsRegistry);
+                    positionsRegistry[rootNode.id] = { x: centerX - 800, y: centerY, direction: &quot;right&quot; }; compileDomNodeBoxCard(rootNode, centerX - 800, centerY, &quot;right&quot;, positionsRegistry);
+                    if (rootNode.isExpanded &amp;&amp; rootNode.children) calculateBranchCoordinateStack(rootNode.children, centerX - 800 + MAP_GAP_X, centerY, &quot;right&quot;, positionsRegistry);
                 }
                 
-                setTimeout(() => { drawBezierVectorTraces(rootNode, positionsRegistry); }, 10);
+                setTimeout(() =&gt; { drawBezierVectorTraces(rootNode, positionsRegistry); }, 10);
             }
             
             function calculateBranchCoordinateStack(branches, startX, centerY, direction, registry) {
                 const totalHeightBoundary = getSubtreeVerticalHeightSpan(branches); let cumulativeY = centerY - totalHeightBoundary / 2;
-                branches.forEach(branch => {
+                branches.forEach(branch =&gt; {
                     const branchHeight = getSubtreeVerticalHeightSpan([branch]); const calculatedNodeY = cumulativeY + branchHeight / 2;
                     registry[branch.id] = { x: startX, y: calculatedNodeY, direction: direction }; compileDomNodeBoxCard(branch, startX, calculatedNodeY, direction, registry);
-                    if (branch.isExpanded && branch.children && branch.children.length > 0) { calculateBranchCoordinateStack(branch.children, direction === "left" ? startX - MAP_GAP_X : startX + MAP_GAP_X, calculatedNodeY, direction, registry); }
+                    if (branch.isExpanded &amp;&amp; branch.children &amp;&amp; branch.children.length &gt; 0) { calculateBranchCoordinateStack(branch.children, direction === &quot;left&quot; ? startX - MAP_GAP_X : startX + MAP_GAP_X, calculatedNodeY, direction, registry); }
                     cumulativeY += branchHeight;
                 });
             }
             
             function getSubtreeVerticalHeightSpan(nodes) {
                 if (!nodes || nodes.length === 0) return MAP_GAP_Y; 
-                let h = 0; nodes.forEach(n => { h += (n.isExpanded && n.children && n.children.length > 0) ? getSubtreeVerticalHeightSpan(n.children) : MAP_GAP_Y; }); return h;
+                let h = 0; nodes.forEach(n =&gt; { h += (n.isExpanded &amp;&amp; n.children &amp;&amp; n.children.length &gt; 0) ? getSubtreeVerticalHeightSpan(n.children) : MAP_GAP_Y; }); return h;
             }
             
             function compileDomNodeBoxCard(node, x, y, direction, registry) {
-                const wrapper = document.createElement("div"); 
-                wrapper.id = "map-node-" + node.id;
+                const wrapper = document.createElement(&quot;div&quot;); 
+                wrapper.id = &quot;map-node-&quot; + node.id;
                 wrapper.className = `map-node-wrapper level-${node.type.toLowerCase()} dir-${direction}`; wrapper.style.left = `${x}px`; wrapper.style.top = `${y}px`;
-                let isQuiz = node.type === "Quiz"; let statusClass = isQuiz ? `status-${(node.status || "Pending").toLowerCase()}` : "";
+                let isQuiz = node.type === &quot;Quiz&quot;; let statusClass = isQuiz ? `status-${(node.status || &quot;Pending&quot;).toLowerCase()}` : &quot;&quot;;
                 if(statusClass) wrapper.classList.add(statusClass);
                 
-                let subHTML = "";
-                let attemptsHTML = "";
+                let subHTML = &quot;&quot;;
+                let attemptsHTML = &quot;&quot;;
                 if(isQuiz) {
-                    if (node.status === "Attempted" && node.highestPct) { subHTML = `<span class="map-node-sub fire-text">🔥 ${node.highestPct.toFixed(1)}% (${node.highestScore})</span>`; } 
-                    else if (node.status === "Quitted") { subHTML = `<span class="map-node-sub">Quitted</span>`; } 
-                    if (node.attempts && node.attempts.length > 0) {
-                        attemptsHTML = `<div class="map-node-attempts">${node.attempts.slice(-5).map(a => `<span class="attempt-chip">${a}</span>`).join('')}</div>`;
+                    if (node.status === &quot;Attempted&quot; &amp;&amp; node.highestPct) { subHTML = `&lt;span class=&quot;map-node-sub fire-text&quot;&gt;🔥 ${node.highestPct.toFixed(1)}% (${node.highestScore})&lt;/span&gt;`; } 
+                    else if (node.status === &quot;Quitted&quot;) { subHTML = `&lt;span class=&quot;map-node-sub&quot;&gt;Quitted&lt;/span&gt;`; } 
+                    if (node.attempts &amp;&amp; node.attempts.length &gt; 0) {
+                        attemptsHTML = `&lt;div class=&quot;map-node-attempts&quot;&gt;${node.attempts.slice(-5).map(a =&gt; `&lt;span class=&quot;attempt-chip&quot;&gt;${a}&lt;/span&gt;`).join('')}&lt;/div&gt;`;
                     }
                 }
                 
-                wrapper.innerHTML = `<div class="map-node-card"><div class="map-node-info-text"><span class="map-node-title">${node.name}</span>${subHTML}${attemptsHTML}</div></div>`;
+                wrapper.innerHTML = `&lt;div class=&quot;map-node-card&quot;&gt;&lt;div class=&quot;map-node-info-text&quot;&gt;&lt;span class=&quot;map-node-title&quot;&gt;${node.name}&lt;/span&gt;${subHTML}${attemptsHTML}&lt;/div&gt;&lt;/div&gt;`;
                 
-                if (node.children && node.children.length > 0) { 
-                    const expander = document.createElement("div"); expander.className = "node-expander-btn"; expander.innerText = node.isExpanded ? "➖" : "➕"; 
-                    expander.onpointerdown = (e) => e.stopPropagation(); expander.onclick = (e) => { e.stopPropagation(); node.isExpanded = !node.isExpanded; saveData(); renderMindMapCanvas(); }; 
+                if (node.children &amp;&amp; node.children.length &gt; 0) { 
+                    const expander = document.createElement(&quot;div&quot;); expander.className = &quot;node-expander-btn&quot;; expander.innerText = node.isExpanded ? &quot;➖&quot; : &quot;➕&quot;; 
+                    expander.onpointerdown = (e) =&gt; e.stopPropagation(); expander.onclick = (e) =&gt; { e.stopPropagation(); node.isExpanded = !node.isExpanded; saveData(); renderMindMapCanvas(); }; 
                     wrapper.appendChild(expander); 
                 }
                 
@@ -910,13 +1022,13 @@ Right index.HTML
                 if (!node.isExpanded || !node.children) return; 
                 const parentCoords = registry[node.id]; if (!parentCoords) return;
                 
-                let pElem = document.getElementById("map-node-" + node.id);
+                let pElem = document.getElementById(&quot;map-node-&quot; + node.id);
                 let pOffset = pElem ? (pElem.getBoundingClientRect().width / (2 * scale)) : 100;
                 
-                node.children.forEach(child => {
+                node.children.forEach(child =&gt; {
                     const childCoords = registry[child.id];
                     if (childCoords) {
-                        let cElem = document.getElementById("map-node-" + child.id);
+                        let cElem = document.getElementById(&quot;map-node-&quot; + child.id);
                         let cOffset = cElem ? (cElem.getBoundingClientRect().width / (2 * scale)) : 100;
                         
                         let pX = parentCoords.x; let cX = childCoords.x;
@@ -924,24 +1036,24 @@ Right index.HTML
                         if (childCoords.direction === 'right') { pX += pOffset; cX -= cOffset; } 
                         else if (childCoords.direction === 'left') { pX -= pOffset; cX += cOffset; }
                         else if (childCoords.direction === 'center') {
-                            if(childCoords.x > parentCoords.x) { pX += pOffset; cX -= cOffset; } else { pX -= pOffset; cX += cOffset; }
+                            if(childCoords.x &gt; parentCoords.x) { pX += pOffset; cX -= cOffset; } else { pX -= pOffset; cX += cOffset; }
                         }
                         
-                        const path = document.createElementNS("http://www.w3.org/2000/svg", "path"); 
+                        const path = document.createElementNS(&quot;http://www.w3.org/2000/svg&quot;, &quot;path&quot;); 
                         let controlMidpointX = (pX + cX) / 2;
-                        path.setAttribute("d", `M ${pX} ${parentCoords.y} C ${controlMidpointX} ${parentCoords.y}, ${controlMidpointX} ${childCoords.y}, ${cX} ${childCoords.y}`);
-                        path.setAttribute("stroke", node.type === "Exam" ? "var(--accent-indigo)" : "var(--border-light)"); path.setAttribute("stroke-width", "4"); path.setAttribute("fill", "none");
+                        path.setAttribute(&quot;d&quot;, `M ${pX} ${parentCoords.y} C ${controlMidpointX} ${parentCoords.y}, ${controlMidpointX} ${childCoords.y}, ${cX} ${childCoords.y}`);
+                        path.setAttribute(&quot;stroke&quot;, node.type === &quot;Exam&quot; ? &quot;var(--accent-indigo)&quot; : &quot;var(--border-light)&quot;); path.setAttribute(&quot;stroke-width&quot;, &quot;4&quot;); path.setAttribute(&quot;fill&quot;, &quot;none&quot;);
                         svgTraceLayer.appendChild(path); drawBezierVectorTraces(child, registry);
                     }
                 });
             }
             
-            function deleteNodeFromDatabase(nodes, id) { let idx = nodes.findIndex(n => n.id === id); if (idx !== -1) { nodes.splice(idx, 1); return true; } for (let n of nodes) { if (n.children && deleteNodeFromDatabase(n.children, id)) return true; } return false; }
+            function deleteNodeFromDatabase(nodes, id) { let idx = nodes.findIndex(n =&gt; n.id === id); if (idx !== -1) { nodes.splice(idx, 1); return true; } for (let n of nodes) { if (n.children &amp;&amp; deleteNodeFromDatabase(n.children, id)) return true; } return false; }
             
             function centerMindMap() {
                 const vpWidth = mapViewport.clientWidth || window.innerWidth; const vpHeight = mapViewport.clientHeight || window.innerHeight;
                 scale = 1.0; panOffset.x = (vpWidth / 2) - (5000 * scale); panOffset.y = (vpHeight / 2) - (5000 * scale);
-                if(currentLayout === "tree") panOffset.x += 800; applyTransformationPlane();
+                if(currentLayout === &quot;tree&quot;) panOffset.x += 800; applyTransformationPlane();
             }
             function applyTransformationPlane() { mapCanvas.style.transform = `translate(${panOffset.x}px, ${panOffset.y}px) scale(${scale})`; }
             
@@ -956,23 +1068,143 @@ Right index.HTML
                 scale = newScale; applyTransformationPlane();
             }
             
-            mapViewport.addEventListener("pointerdown", (e) => { if (e.target.closest('.map-node-card') || e.target.closest('.node-expander-btn') || e.target.closest('.map-controls-panel') || e.target.closest('.floating-hud-compass')) return; isDragging = true; startX = e.clientX - panOffset.x; startY = e.clientY - panOffset.y; mapViewport.setPointerCapture(e.pointerId); });
-            mapViewport.addEventListener("pointermove", (e) => { if (isDragging) { panOffset.x = e.clientX - startX; panOffset.y = e.clientY - startY; applyTransformationPlane(); } });
-            mapViewport.addEventListener("pointerup", (e) => { isDragging = false; mapViewport.releasePointerCapture(e.pointerId); });
-            mapViewport.addEventListener("wheel", (e) => { e.preventDefault(); const rect = mapViewport.getBoundingClientRect(); zoomFocal(e.deltaY < 0 ? scale * 1.1 : scale * 0.9, e.clientX - rect.left, e.clientY - rect.top); }, { passive: false });
+            mapViewport.addEventListener(&quot;pointerdown&quot;, (e) =&gt; { if (e.target.closest('.map-node-card') || e.target.closest('.node-expander-btn') || e.target.closest('.map-controls-panel') || e.target.closest('.floating-hud-compass')) return; isDragging = true; startX = e.clientX - panOffset.x; startY = e.clientY - panOffset.y; mapViewport.setPointerCapture(e.pointerId); });
+            mapViewport.addEventListener(&quot;pointermove&quot;, (e) =&gt; { if (isDragging) { panOffset.x = e.clientX - startX; panOffset.y = e.clientY - startY; applyTransformationPlane(); } });
+            mapViewport.addEventListener(&quot;pointerup&quot;, (e) =&gt; { isDragging = false; mapViewport.releasePointerCapture(e.pointerId); });
+            mapViewport.addEventListener(&quot;wheel&quot;, (e) =&gt; { e.preventDefault(); const rect = mapViewport.getBoundingClientRect(); zoomFocal(e.deltaY &lt; 0 ? scale * 1.1 : scale * 0.9, e.clientX - rect.left, e.clientY - rect.top); }, { passive: false });
             
             let initialPinchDist = null; let initialPinchScale = 1; let pinchFocalX = 0, pinchFocalY = 0;
-            mapViewport.addEventListener("touchstart", (e) => { 
+            mapViewport.addEventListener(&quot;touchstart&quot;, (e) =&gt; { 
                 if (e.touches.length === 2) { isDragging = false; initialPinchDist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY); initialPinchScale = scale; const rect = mapViewport.getBoundingClientRect(); pinchFocalX = ((e.touches[0].clientX + e.touches[1].clientX) / 2) - rect.left; pinchFocalY = ((e.touches[0].clientY + e.touches[1].clientY) / 2) - rect.top; } 
             }, {passive: false});
-            mapViewport.addEventListener("touchmove", (e) => { if (e.touches.length === 2 && initialPinchDist) { e.preventDefault(); const currentDist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY); zoomFocal(initialPinchScale * (currentDist / initialPinchDist), pinchFocalX, pinchFocalY); } }, {passive: false});
-            mapViewport.addEventListener("touchend", (e) => { if (e.touches.length < 2) initialPinchDist = null; });
+            mapViewport.addEventListener(&quot;touchmove&quot;, (e) =&gt; { if (e.touches.length === 2 &amp;&amp; initialPinchDist) { e.preventDefault(); const currentDist = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY); zoomFocal(initialPinchScale * (currentDist / initialPinchDist), pinchFocalX, pinchFocalY); } }, {passive: false});
+            mapViewport.addEventListener(&quot;touchend&quot;, (e) =&gt; { if (e.touches.length &lt; 2) initialPinchDist = null; });
             
-            document.getElementById("mapLayoutSelect").onchange = (e) => { currentLayout = e.target.value; renderMindMapCanvas(); centerMindMap(); };
-            document.getElementById("tabBtnSyllabus").onclick = (e) => { document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active")); e.target.classList.add("active"); activeView = "syllabus"; viewSyllabus.classList.add("active"); viewMindMap.classList.remove("active"); renderSyllabusListView(); };
-            document.getElementById("tabBtnMindMap").onclick = (e) => { document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active")); e.target.classList.add("active"); activeView = "mindmap"; viewSyllabus.classList.remove("active"); viewMindMap.classList.add("active"); populateExamSelect(); renderMindMapCanvas(); setTimeout(centerMindMap, 50); };
+            document.getElementById(&quot;mapLayoutSelect&quot;).onchange = (e) =&gt; { currentLayout = e.target.value; renderMindMapCanvas(); centerMindMap(); };
+            document.getElementById(&quot;tabBtnSyllabus&quot;).onclick = (e) =&gt; { document.querySelectorAll(&quot;.tab-btn&quot;).forEach(b =&gt; b.classList.remove(&quot;active&quot;)); e.target.classList.add(&quot;active&quot;); activeView = &quot;syllabus&quot;; viewSyllabus.classList.add(&quot;active&quot;); viewMindMap.classList.remove(&quot;active&quot;); renderSyllabusListView(); };
+            document.getElementById(&quot;tabBtnMindMap&quot;).onclick = (e) =&gt; { document.querySelectorAll(&quot;.tab-btn&quot;).forEach(b =&gt; b.classList.remove(&quot;active&quot;)); e.target.classList.add(&quot;active&quot;); activeView = &quot;mindmap&quot;; viewSyllabus.classList.remove(&quot;active&quot;); viewMindMap.classList.add(&quot;active&quot;); populateExamSelect(); renderMindMapCanvas(); setTimeout(centerMindMap, 50); };
             
-            populateExamSelect(); renderSyllabusListView(); setTimeout(centerMindMap, 100); updateGlobalFireBadge();
-        </script>
-    </body>
+            // ================= DRAWER PAGE NAVIGATION =================
+            function goBackToMain() {
+                document.querySelectorAll('.drawer-page').forEach(p =&gt; p.classList.remove('active'));
+                document.getElementById('drawerPageMain').classList.add('active');
+            }
+            
+            function openProfileEditPage() {
+                const name = localStorage.getItem('kagazi_user_name') || 'Engine Master';
+                document.getElementById('profileNameInput').value = name;
+                document.querySelectorAll('.drawer-page').forEach(p =&gt; p.classList.remove('active'));
+                document.getElementById('drawerPageProfile').classList.add('active');
+            }
+            
+            function openThemePage() {
+                highlightActiveTheme();
+                document.querySelectorAll('.drawer-page').forEach(p =&gt; p.classList.remove('active'));
+                document.getElementById('drawerPageTheme').classList.add('active');
+            }
+            
+            function openDataPage() {
+                document.querySelectorAll('.drawer-page').forEach(p =&gt; p.classList.remove('active'));
+                document.getElementById('drawerPageData').classList.add('active');
+            }
+            
+            // ================= PROFILE MANAGEMENT =================
+            function updateProfileDisplay() {
+                const photo = localStorage.getItem('kagazi_profile_photo');
+                const name = localStorage.getItem('kagazi_user_name') || 'Engine Master';
+                
+                // Top navbar
+                const navAvatar = document.querySelector('.profile-avatar');
+                const navName = document.querySelector('.profile-name');
+                if (navName) navName.innerText = name;
+                if (navAvatar) {
+                    if (photo) {
+                        navAvatar.innerHTML = `&lt;img src=&quot;${photo}&quot; style=&quot;width:100%;height:100%;border-radius:50%;object-fit:cover;&quot; alt=&quot;&quot;&gt;`;
+                    } else {
+                        navAvatar.innerHTML = '👤';
+                    }
+                }
+                
+                // Drawer profile card
+                const drawerName = document.getElementById('drawerProfileName');
+                const drawerAvatar = document.getElementById('drawerProfileAvatar');
+                if (drawerName) drawerName.innerText = name;
+                if (drawerAvatar) {
+                    if (photo) {
+                        drawerAvatar.innerHTML = `&lt;img src=&quot;${photo}&quot; style=&quot;width:100%;height:100%;border-radius:50%;object-fit:cover;&quot; alt=&quot;&quot;&gt;`;
+                    } else {
+                        drawerAvatar.innerHTML = '🎓';
+                    }
+                }
+                
+                // Profile edit page preview
+                const preview = document.getElementById('profilePhotoPreview');
+                const placeholder = document.getElementById('profilePhotoPlaceholder');
+                if (preview &amp;&amp; placeholder) {
+                    if (photo) {
+                        preview.src = photo;
+                        preview.style.display = 'block';
+                        placeholder.style.display = 'none';
+                    } else {
+                        preview.style.display = 'none';
+                        placeholder.style.display = 'flex';
+                    }
+                }
+            }
+            
+            function saveProfileChanges() {
+                const nameInput = document.getElementById('profileNameInput');
+                if (nameInput &amp;&amp; nameInput.value.trim()) {
+                    localStorage.setItem('kagazi_user_name', nameInput.value.trim());
+                }
+                updateProfileDisplay();
+                goBackToMain();
+            }
+            
+            function handlePhotoFile(file) {
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (e) =&gt; {
+                    const img = new Image();
+                    img.onload = () =&gt; {
+                        const canvas = document.createElement('canvas');
+                        const size = 256;
+                        canvas.width = size;
+                        canvas.height = size;
+                        const ctx = canvas.getContext('2d');
+                        
+                        // Cover crop to center square for best fit
+                        const scale = Math.max(size / img.width, size / img.height);
+                        const x = (size - img.width * scale) / 2;
+                        const y = (size - img.height * scale) / 2;
+                        
+                        ctx.drawImage(img, x, y, img.width * scale, img.height * scale);
+                        const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
+                        localStorage.setItem('kagazi_profile_photo', dataUrl);
+                        updateProfileDisplay();
+                    };
+                    img.src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+            
+            function updateThemeLabel() {
+                const current = localStorage.getItem('kagazi_theme') || 'light';
+                const labels = { light: 'Light', dark: 'Dark', kagazi: 'Kagazi', 'xmind-classic': 'XMind', 'xmind-zen': 'Zen', monochrome: 'Monochrome' };
+                const labelEl = document.getElementById('currentThemeLabel');
+                if (labelEl) labelEl.innerText = labels[current] || current;
+            }
+            
+            document.getElementById('profilePhotoInput').onchange = function(e) {
+                if (this.files &amp;&amp; this.files[0]) handlePhotoFile(this.files[0]);
+                this.value = '';
+            };
+            
+            // =================
+            
+            populateExamSelect(); renderSyllabusListView(); setTimeout(centerMindMap, 100); updateGlobalFireBadge(); updateProfileDisplay(); updateThemeLabel();
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
 </html>
